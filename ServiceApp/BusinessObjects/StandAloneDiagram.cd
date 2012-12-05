@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BusinessObjects.AddressType">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.AddressType.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AddressType.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMAAAAAAAAAAABgAABAAAAEAAAAAAQAAAAAAAIA=</HashCode>
+      <FileName>AddressType.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.AddressTypeList">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.AddressTypeList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AddressTypeList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAABAAAAAAAAAAAgAAAgAIAAAAEAI=</HashCode>
+      <FileName>AddressTypeList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.PhoneType">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.PhoneType.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhoneType.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMAAAAAAAAAAABgAABAAAAEAAAAAAQAAAAAAAIA=</HashCode>
+      <FileName>PhoneType.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.PhoneTypeList">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.PhoneTypeList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhoneTypeList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAABAAAEAAAAAAAgAAAgAAAAAAEAI=</HashCode>
+      <FileName>PhoneTypeList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.Labor">
+    <Position X="7.75" Y="9.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.Labor.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Labor.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMEAAAAAAAAAABgAABAAAgEAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Labor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.LaborList">
+    <Position X="9.5" Y="10.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.LaborList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>LaborList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAABAACAAAAAAAAgAAAgAAAAAAEAI=</HashCode>
+      <FileName>LaborList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.MakeList">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.MakeList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MakeList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQgAAIAAAAAAAAAAABAAAAAAAAAAAgAAAgAAAAAAEAI=</HashCode>
+      <FileName>MakeList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.Make">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.Make.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Make.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMAAAAAAAAAAABgAABQAAAEAAAAAAAgAAAAAAIA=</HashCode>
+      <FileName>Make.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.MakeModel">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.MakeModel.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MakeModel.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMBAAAAAAAAAABgAABAAAAGAQAAAAAAAAAABAIA=</HashCode>
+      <FileName>MakeModel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.MakeModelList">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.MakeModelList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MakeModelList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAQAAAAAAAABAAAAAAAAIAAgAAAggAAAAAEAI=</HashCode>
+      <FileName>MakeModelList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.Model">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.Model.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMAAAAAAAAAAABgAABQAAAEAAAAAAAgAAAAAAIA=</HashCode>
+      <FileName>Model.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.ModelList">
+    <Position X="4" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.ModelList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ModelList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAABAAAAAAAAAAAgAEAgAAAAAAEAI=</HashCode>
+      <FileName>ModelList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.Part">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.Part.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Part.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AI0AAMAAAACAAAAAABgAABAAAAEAAAEAgAAAAQAAAIA=</HashCode>
+      <FileName>Part.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.PartList">
+    <Position X="5.75" Y="9.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.PartList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PartList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAABAAAAAAAAAAAgAAAgAAAIAAEAI=</HashCode>
+      <FileName>PartList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.EmailType">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.EmailType.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EmailType.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMAAAAAAAAAAABgAABAAAAEAAAAAAQAAAAAAAIA=</HashCode>
+      <FileName>EmailType.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.EmailTypeList">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.EmailTypeList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EmailTypeList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAEIAAAAAAAAAAABAAAAAAAAAAAgAAAgAAAAAAEAI=</HashCode>
+      <FileName>EmailTypeList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.Technician">
+    <Position X="9.75" Y="4.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.Technician.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Technician.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwAAMAAAAAAAAAAABgAAFAAACEARAAkAAAAIgAAAIg=</HashCode>
+      <FileName>Technician.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.TechnicianList">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BusinessObjects.TechnicianList.eIsSavable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TechnicianList.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAABAAAAAAAAAAAgAAAgAAAAABEAI=</HashCode>
+      <FileName>TechnicianList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessObjects.HeaderData">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACEAAAAAARAAAIAAAAEAEAAAgAAAAAAkAhAAAgAAA=</HashCode>
+      <FileName>HeaderData.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
