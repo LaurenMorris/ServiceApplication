@@ -271,6 +271,8 @@ Public Class Customer
 
 #End Region
 
+    ' testing comment
+
     Public Sub mEmails_evtIsSavable(savable As Boolean) Handles mEmails.evtIsSavable
         RaiseEvent evtIsSavable(savable)
     End Sub

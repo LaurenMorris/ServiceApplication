@@ -64,3 +64,6 @@ H:\Visual Studio 2010\Projects\ServiceApp\ServiceApp\obj\x86\Debug\ServiceApp.fr
 H:\Visual Studio 2010\Projects\ServiceApp\ServiceApp\obj\x86\Debug\ServiceApp.Resources.resources
 H:\Visual Studio 2010\Projects\ServiceApp\ServiceApp\obj\x86\Debug\GenerateResource.read.1.tlog
 H:\Visual Studio 2010\Projects\ServiceApp\ServiceApp\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\ServiceApp\obj\x86\Debug\ServiceApp.exe
+H:\git\ServiceApp\ServiceApp\ServiceApp\obj\x86\Debug\ServiceApp.xml
+H:\git\ServiceApp\ServiceApp\ServiceApp\obj\x86\Debug\ServiceApp.pdb
