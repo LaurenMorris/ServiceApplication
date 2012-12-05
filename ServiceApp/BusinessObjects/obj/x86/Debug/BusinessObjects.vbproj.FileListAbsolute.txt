@@ -48,3 +48,26 @@ H:\Visual Studio 2010\Projects\ServiceApp\BusinessObjects\obj\x86\Debug\Generate
 H:\Visual Studio 2010\Projects\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.dll
 H:\Visual Studio 2010\Projects\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.xml
 H:\Visual Studio 2010\Projects\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.pdb
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\BusinessObjects.dll.config
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\BusinessObjects.dll
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\BusinessObjects.pdb
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\BusinessObjects.xml
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\DatabaseHelper.dll
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\SQLHelper.dll
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\DatabaseHelper.pdb
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\DatabaseHelper.xml
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\DatatypeHelper.pdb
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\SQLHelper.pdb
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\SQLHelper.xml
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\ConfigurationHelper.pdb
+H:\git\ServiceApp\ServiceApp\BusinessObjects\bin\Debug\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.Resources.resources
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.dll
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.xml
+H:\git\ServiceApp\ServiceApp\BusinessObjects\obj\x86\Debug\BusinessObjects.pdb
