@@ -196,7 +196,7 @@ Public Class WorkorderLabor
         Try
             db.Command.Parameters.Clear()
             db.Command.CommandType = CommandType.StoredProcedure
-            db.Command.CommandText = "tblWordorderLabor_DELETE"
+            db.Command.CommandText = "tblWorkorderLabor_DELETE"
 
             'update header data parameters 
             MyBase.InitializeParameters(db, MyBase.Id)
