@@ -269,7 +269,7 @@ Public Class Workorder
             db.Command.Parameters.Add("@Serial", SqlDbType.VarChar).Value = mSerial
             db.Command.Parameters.Add("@DateOpened", SqlDbType.Date).Value = mDateOpened
             db.Command.Parameters.Add("@DateClosed", SqlDbType.Date).Value = mDateClosed
-            db.Command.Parameters.Add("@LaborRate", SqlDbType.Money).Value = mLaborRate
+            'db.Command.Parameters.Add("@LaborRate", SqlDbType.Money).Value = mLaborRate
             db.Command.Parameters.Add("@Cost", SqlDbType.Money).Value = mCost
             db.Command.Parameters.Add("@TaxID", SqlDbType.Int).Value = mTaxID
             db.Command.Parameters.Add("@TotalCost", SqlDbType.Money).Value = mTotalCost
