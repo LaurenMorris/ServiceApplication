@@ -28,3 +28,13 @@ H:\Visual Studio 2010\Projects\ServiceApp\DatatypeHelper\obj\Debug\GenerateResou
 H:\Visual Studio 2010\Projects\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.dll
 H:\Visual Studio 2010\Projects\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.xml
 H:\Visual Studio 2010\Projects\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\bin\Debug\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\bin\Debug\DatatypeHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\bin\Debug\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Debug\DatatypeHelper.pdb

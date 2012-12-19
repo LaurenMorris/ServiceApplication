@@ -37,3 +37,16 @@ H:\Visual Studio 2010\Projects\ServiceApp\DatabaseHelper\obj\Debug\GenerateResou
 H:\Visual Studio 2010\Projects\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.dll
 H:\Visual Studio 2010\Projects\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.xml
 H:\Visual Studio 2010\Projects\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Debug\DatabaseHelper.xml
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Debug\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Debug\ConfigurationHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Debug\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.xml
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Debug\DatabaseHelper.pdb

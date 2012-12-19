@@ -29,7 +29,7 @@ Partial Class frmCustomer
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(550, 453)
+        Me.ClientSize = New System.Drawing.Size(507, 404)
         Me.Name = "frmCustomer"
         Me.Text = "Customer Account"
         Me.ResumeLayout(False)

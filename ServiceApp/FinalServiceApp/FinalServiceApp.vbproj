@@ -72,11 +72,46 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frmEquipment.Designer.vb">
+      <DependentUpon>frmEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManufacturer.Designer.vb">
+      <DependentUpon>frmManufacturer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManufacturer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParts.Designer.vb">
+      <DependentUpon>frmParts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmParts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTechnician.Designer.vb">
+      <DependentUpon>frmTechnician.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTechnician.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkorder.Designer.vb">
+      <DependentUpon>frmWorkorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkorder.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,6 +131,27 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEquipment.resx">
+      <DependentUpon>frmEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManufacturer.resx">
+      <DependentUpon>frmManufacturer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParts.resx">
+      <DependentUpon>frmParts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTechnician.resx">
+      <DependentUpon>frmTechnician.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkorder.resx">
+      <DependentUpon>frmWorkorder.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -113,6 +169,16 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.vbproj">
+      <Project>{D2DF1C47-4D9A-46AD-9334-3D6C75CA8B3A}</Project>
+      <Name>BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatatypeHelper\DatatypeHelper.vbproj">
+      <Project>{9D17C492-A43C-4ADF-A63C-5ACFE22C1E30}</Project>
+      <Name>DatatypeHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

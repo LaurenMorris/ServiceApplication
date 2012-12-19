@@ -18,3 +18,13 @@ H:\Visual Studio 2010\Projects\ServiceApp\ConfigurationHelper\obj\Debug\Generate
 H:\Visual Studio 2010\Projects\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
 H:\Visual Studio 2010\Projects\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
 H:\Visual Studio 2010\Projects\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\bin\Debug\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\bin\Debug\ConfigurationHelper.pdb
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\bin\Debug\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb

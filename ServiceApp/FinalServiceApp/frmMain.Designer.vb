@@ -36,7 +36,7 @@ Partial Class frmMain
         Me.btnTech.Location = New System.Drawing.Point(93, 214)
         Me.btnTech.Name = "btnTech"
         Me.btnTech.Size = New System.Drawing.Size(114, 42)
-        Me.btnTech.TabIndex = 0
+        Me.btnTech.TabIndex = 5
         Me.btnTech.Text = "Service Technicians"
         Me.btnTech.UseVisualStyleBackColor = True
         '
@@ -45,7 +45,7 @@ Partial Class frmMain
         Me.btnWorkorder.Location = New System.Drawing.Point(93, 153)
         Me.btnWorkorder.Name = "btnWorkorder"
         Me.btnWorkorder.Size = New System.Drawing.Size(114, 43)
-        Me.btnWorkorder.TabIndex = 1
+        Me.btnWorkorder.TabIndex = 3
         Me.btnWorkorder.Text = "Service Workorders"
         Me.btnWorkorder.UseVisualStyleBackColor = True
         '
@@ -54,7 +54,7 @@ Partial Class frmMain
         Me.btnCustomer.Location = New System.Drawing.Point(93, 90)
         Me.btnCustomer.Name = "btnCustomer"
         Me.btnCustomer.Size = New System.Drawing.Size(114, 43)
-        Me.btnCustomer.TabIndex = 2
+        Me.btnCustomer.TabIndex = 1
         Me.btnCustomer.Text = "Customer Accounts"
         Me.btnCustomer.UseVisualStyleBackColor = True
         '
@@ -63,7 +63,7 @@ Partial Class frmMain
         Me.btnEquipment.Location = New System.Drawing.Point(268, 153)
         Me.btnEquipment.Name = "btnEquipment"
         Me.btnEquipment.Size = New System.Drawing.Size(114, 43)
-        Me.btnEquipment.TabIndex = 3
+        Me.btnEquipment.TabIndex = 4
         Me.btnEquipment.Text = "Equipment"
         Me.btnEquipment.UseVisualStyleBackColor = True
         '
@@ -72,7 +72,7 @@ Partial Class frmMain
         Me.btnManufacturer.Location = New System.Drawing.Point(268, 90)
         Me.btnManufacturer.Name = "btnManufacturer"
         Me.btnManufacturer.Size = New System.Drawing.Size(114, 43)
-        Me.btnManufacturer.TabIndex = 4
+        Me.btnManufacturer.TabIndex = 2
         Me.btnManufacturer.Text = "Manufacturers"
         Me.btnManufacturer.UseVisualStyleBackColor = True
         '
@@ -81,7 +81,7 @@ Partial Class frmMain
         Me.btnParts.Location = New System.Drawing.Point(268, 214)
         Me.btnParts.Name = "btnParts"
         Me.btnParts.Size = New System.Drawing.Size(114, 42)
-        Me.btnParts.TabIndex = 5
+        Me.btnParts.TabIndex = 6
         Me.btnParts.Text = "Parts"
         Me.btnParts.UseVisualStyleBackColor = True
         '
@@ -99,7 +99,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.btnTech)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmMain"
         Me.Text = "L & M Tractor Repair"
         Me.ResumeLayout(False)

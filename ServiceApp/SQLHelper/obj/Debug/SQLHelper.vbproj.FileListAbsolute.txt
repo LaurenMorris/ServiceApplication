@@ -37,3 +37,16 @@ H:\Visual Studio 2010\Projects\ServiceApp\SQLHelper\obj\Debug\GenerateResource.w
 H:\Visual Studio 2010\Projects\ServiceApp\SQLHelper\obj\Debug\SQLHelper.dll
 H:\Visual Studio 2010\Projects\ServiceApp\SQLHelper\obj\Debug\SQLHelper.xml
 H:\Visual Studio 2010\Projects\ServiceApp\SQLHelper\obj\Debug\SQLHelper.pdb
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Debug\SQLHelper.dll
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Debug\SQLHelper.pdb
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Debug\SQLHelper.xml
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Debug\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Debug\DatatypeHelper.pdb
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Debug\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\SQLHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\SQLHelper.dll
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\SQLHelper.xml
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Debug\SQLHelper.pdb
