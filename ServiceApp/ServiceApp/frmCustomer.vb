@@ -193,6 +193,8 @@ Public Class frmCustomer
 
 #End Region
 
+
+
     Private Sub dgvCustomer_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles dgvCustomer.KeyDown
         Try
             If Me.dgvCustomer.SelectedRows IsNot Nothing AndAlso Me.dgvCustomer.SelectedRows.Count > 0 Then

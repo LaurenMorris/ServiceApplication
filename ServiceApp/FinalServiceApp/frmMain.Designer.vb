@@ -29,6 +29,12 @@ Partial Class frmMain
         Me.btnEquipment = New System.Windows.Forms.Button()
         Me.btnManufacturer = New System.Windows.Forms.Button()
         Me.btnParts = New System.Windows.Forms.Button()
+        Me.panelMain = New System.Windows.Forms.Panel()
+        Me.panelWorkorder = New System.Windows.Forms.Panel()
+        Me.btnNewWorkorder = New System.Windows.Forms.Button()
+        Me.btnEditWorkorder = New System.Windows.Forms.Button()
+        Me.btnMain = New System.Windows.Forms.Button()
+        Me.panelWorkorder.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnTech
@@ -85,23 +91,71 @@ Partial Class frmMain
         Me.btnParts.Text = "Parts"
         Me.btnParts.UseVisualStyleBackColor = True
         '
+        'panelMain
+        '
+        Me.panelMain.Location = New System.Drawing.Point(47, 31)
+        Me.panelMain.Name = "panelMain"
+        Me.panelMain.Size = New System.Drawing.Size(386, 257)
+        Me.panelMain.TabIndex = 7
+        '
+        'panelWorkorder
+        '
+        Me.panelWorkorder.Controls.Add(Me.btnMain)
+        Me.panelWorkorder.Controls.Add(Me.btnEditWorkorder)
+        Me.panelWorkorder.Controls.Add(Me.btnNewWorkorder)
+        Me.panelWorkorder.Location = New System.Drawing.Point(47, 31)
+        Me.panelWorkorder.Name = "panelWorkorder"
+        Me.panelWorkorder.Size = New System.Drawing.Size(386, 257)
+        Me.panelWorkorder.TabIndex = 8
+        Me.panelWorkorder.Visible = False
+        '
+        'btnNewWorkorder
+        '
+        Me.btnNewWorkorder.Location = New System.Drawing.Point(78, 99)
+        Me.btnNewWorkorder.Name = "btnNewWorkorder"
+        Me.btnNewWorkorder.Size = New System.Drawing.Size(98, 43)
+        Me.btnNewWorkorder.TabIndex = 0
+        Me.btnNewWorkorder.Text = "New Workorder"
+        Me.btnNewWorkorder.UseVisualStyleBackColor = True
+        '
+        'btnEditWorkorder
+        '
+        Me.btnEditWorkorder.Location = New System.Drawing.Point(209, 99)
+        Me.btnEditWorkorder.Name = "btnEditWorkorder"
+        Me.btnEditWorkorder.Size = New System.Drawing.Size(98, 43)
+        Me.btnEditWorkorder.TabIndex = 1
+        Me.btnEditWorkorder.Text = "Edit Workorder"
+        Me.btnEditWorkorder.UseVisualStyleBackColor = True
+        '
+        'btnMain
+        '
+        Me.btnMain.Location = New System.Drawing.Point(3, 0)
+        Me.btnMain.Name = "btnMain"
+        Me.btnMain.Size = New System.Drawing.Size(89, 25)
+        Me.btnMain.TabIndex = 2
+        Me.btnMain.Text = "Main Menu"
+        Me.btnMain.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(490, 337)
+        Me.Controls.Add(Me.panelWorkorder)
         Me.Controls.Add(Me.btnParts)
         Me.Controls.Add(Me.btnManufacturer)
         Me.Controls.Add(Me.btnEquipment)
         Me.Controls.Add(Me.btnCustomer)
         Me.Controls.Add(Me.btnWorkorder)
         Me.Controls.Add(Me.btnTech)
+        Me.Controls.Add(Me.panelMain)
         Me.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmMain"
         Me.Text = "L & M Tractor Repair"
+        Me.panelWorkorder.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -111,4 +165,9 @@ Partial Class frmMain
     Friend WithEvents btnEquipment As System.Windows.Forms.Button
     Friend WithEvents btnManufacturer As System.Windows.Forms.Button
     Friend WithEvents btnParts As System.Windows.Forms.Button
+    Friend WithEvents panelMain As System.Windows.Forms.Panel
+    Friend WithEvents panelWorkorder As System.Windows.Forms.Panel
+    Friend WithEvents btnEditWorkorder As System.Windows.Forms.Button
+    Friend WithEvents btnNewWorkorder As System.Windows.Forms.Button
+    Friend WithEvents btnMain As System.Windows.Forms.Button
 End Class

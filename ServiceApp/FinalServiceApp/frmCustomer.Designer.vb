@@ -24,7 +24,6 @@ Partial Class frmCustomer
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabSearch = New System.Windows.Forms.TabPage()
-        Me.tabCurrent = New System.Windows.Forms.TabPage()
         Me.btnSearchEmail = New System.Windows.Forms.Button()
         Me.btnSearchPhone = New System.Windows.Forms.Button()
         Me.btnSearchAddress = New System.Windows.Forms.Button()
@@ -60,6 +59,7 @@ Partial Class frmCustomer
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.tabCurrent = New System.Windows.Forms.TabPage()
         Me.dgvCustomerEmail = New System.Windows.Forms.DataGridView()
         Me.CustomerEmailID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CustomerEmailVersion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -91,6 +91,48 @@ Partial Class frmCustomer
         Me.Deleted = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tabAdd = New System.Windows.Forms.TabPage()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dgvWorkorderComment = New System.Windows.Forms.DataGridView()
+        Me.WorkorderCommentID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderCommentVersion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderCommentLastUpdated = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderCommentDeleted = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.WorkorderCommentWorkorderID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Comment = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvWorkorderLabor = New System.Windows.Forms.DataGridView()
+        Me.WorkorderLaborID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderLaborVersion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderLaborLastUpdated = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderLaborDeleted = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.WorkorderLaborWorkorderID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TechID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LaborDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LaborHours = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvWorkorderPart = New System.Windows.Forms.DataGridView()
+        Me.WorkorderPartID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderPartVersion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderPartLastUpdated = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WorkorderPartDeleted = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.WorkorderID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PartID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CostPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvWorkorder = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.CustomerID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MakeModelID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Serial = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateOpened = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateClosed = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LaborRate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cost = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TaxID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalCost = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1.SuspendLayout()
         Me.tabSearch.SuspendLayout()
         Me.tabCurrent.SuspendLayout()
@@ -98,6 +140,12 @@ Partial Class frmCustomer
         CType(Me.dgvCustomerPhone, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvCustomerAddress, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvCustomer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabAdd.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
+        CType(Me.dgvWorkorderComment, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvWorkorderLabor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvWorkorderPart, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvWorkorder, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -108,7 +156,7 @@ Partial Class frmCustomer
         Me.TabControl1.Location = New System.Drawing.Point(24, 43)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(831, 494)
+        Me.TabControl1.Size = New System.Drawing.Size(929, 569)
         Me.TabControl1.TabIndex = 0
         '
         'tabSearch
@@ -155,20 +203,6 @@ Partial Class frmCustomer
         Me.tabSearch.Size = New System.Drawing.Size(823, 468)
         Me.tabSearch.TabIndex = 0
         Me.tabSearch.Text = "Search"
-        '
-        'tabCurrent
-        '
-        Me.tabCurrent.BackColor = System.Drawing.Color.Gainsboro
-        Me.tabCurrent.Controls.Add(Me.dgvCustomerEmail)
-        Me.tabCurrent.Controls.Add(Me.dgvCustomerPhone)
-        Me.tabCurrent.Controls.Add(Me.dgvCustomerAddress)
-        Me.tabCurrent.Controls.Add(Me.dgvCustomer)
-        Me.tabCurrent.Location = New System.Drawing.Point(4, 22)
-        Me.tabCurrent.Name = "tabCurrent"
-        Me.tabCurrent.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabCurrent.Size = New System.Drawing.Size(823, 468)
-        Me.tabCurrent.TabIndex = 1
-        Me.tabCurrent.Text = "Current"
         '
         'btnSearchEmail
         '
@@ -471,6 +505,20 @@ Partial Class frmCustomer
         Me.Label1.TabIndex = 84
         Me.Label1.Text = "Customer Name :"
         '
+        'tabCurrent
+        '
+        Me.tabCurrent.BackColor = System.Drawing.Color.Gainsboro
+        Me.tabCurrent.Controls.Add(Me.dgvCustomerEmail)
+        Me.tabCurrent.Controls.Add(Me.dgvCustomerPhone)
+        Me.tabCurrent.Controls.Add(Me.dgvCustomerAddress)
+        Me.tabCurrent.Controls.Add(Me.dgvCustomer)
+        Me.tabCurrent.Location = New System.Drawing.Point(4, 22)
+        Me.tabCurrent.Name = "tabCurrent"
+        Me.tabCurrent.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabCurrent.Size = New System.Drawing.Size(823, 468)
+        Me.tabCurrent.TabIndex = 1
+        Me.tabCurrent.Text = "Current"
+        '
         'dgvCustomerEmail
         '
         Me.dgvCustomerEmail.AllowUserToDeleteRows = False
@@ -688,20 +736,324 @@ Partial Class frmCustomer
         'tabAdd
         '
         Me.tabAdd.BackColor = System.Drawing.Color.Gainsboro
+        Me.tabAdd.Controls.Add(Me.dgvWorkorderComment)
+        Me.tabAdd.Controls.Add(Me.dgvWorkorderLabor)
+        Me.tabAdd.Controls.Add(Me.dgvWorkorderPart)
+        Me.tabAdd.Controls.Add(Me.dgvWorkorder)
         Me.tabAdd.Location = New System.Drawing.Point(4, 22)
         Me.tabAdd.Name = "tabAdd"
         Me.tabAdd.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabAdd.Size = New System.Drawing.Size(823, 468)
+        Me.tabAdd.Size = New System.Drawing.Size(921, 543)
         Me.tabAdd.TabIndex = 2
-        Me.tabAdd.Text = "Add New"
+        Me.tabAdd.Text = "Service History"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(965, 24)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'mnuSave
+        '
+        Me.mnuSave.Name = "mnuSave"
+        Me.mnuSave.Size = New System.Drawing.Size(152, 22)
+        Me.mnuSave.Text = "Save"
+        '
+        'dgvWorkorderComment
+        '
+        Me.dgvWorkorderComment.AllowUserToDeleteRows = False
+        Me.dgvWorkorderComment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvWorkorderComment.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.WorkorderCommentID, Me.WorkorderCommentVersion, Me.WorkorderCommentLastUpdated, Me.WorkorderCommentDeleted, Me.WorkorderCommentWorkorderID, Me.Comment})
+        Me.dgvWorkorderComment.Location = New System.Drawing.Point(98, 408)
+        Me.dgvWorkorderComment.Name = "dgvWorkorderComment"
+        Me.dgvWorkorderComment.Size = New System.Drawing.Size(719, 110)
+        Me.dgvWorkorderComment.TabIndex = 15
+        '
+        'WorkorderCommentID
+        '
+        Me.WorkorderCommentID.DataPropertyName = "ID"
+        Me.WorkorderCommentID.HeaderText = "ID"
+        Me.WorkorderCommentID.Name = "WorkorderCommentID"
+        Me.WorkorderCommentID.Visible = False
+        Me.WorkorderCommentID.Width = 500
+        '
+        'WorkorderCommentVersion
+        '
+        Me.WorkorderCommentVersion.DataPropertyName = "Version"
+        Me.WorkorderCommentVersion.HeaderText = "Version"
+        Me.WorkorderCommentVersion.Name = "WorkorderCommentVersion"
+        Me.WorkorderCommentVersion.Visible = False
+        '
+        'WorkorderCommentLastUpdated
+        '
+        Me.WorkorderCommentLastUpdated.DataPropertyName = "LastUpdated"
+        Me.WorkorderCommentLastUpdated.HeaderText = "Last Updated"
+        Me.WorkorderCommentLastUpdated.Name = "WorkorderCommentLastUpdated"
+        Me.WorkorderCommentLastUpdated.Visible = False
+        '
+        'WorkorderCommentDeleted
+        '
+        Me.WorkorderCommentDeleted.DataPropertyName = "Deleted"
+        Me.WorkorderCommentDeleted.HeaderText = "Deleted"
+        Me.WorkorderCommentDeleted.Name = "WorkorderCommentDeleted"
+        Me.WorkorderCommentDeleted.Visible = False
+        '
+        'WorkorderCommentWorkorderID
+        '
+        Me.WorkorderCommentWorkorderID.DataPropertyName = "WorkorderID"
+        Me.WorkorderCommentWorkorderID.HeaderText = "WorkorderID"
+        Me.WorkorderCommentWorkorderID.Name = "WorkorderCommentWorkorderID"
+        Me.WorkorderCommentWorkorderID.Visible = False
+        '
+        'Comment
+        '
+        Me.Comment.DataPropertyName = "Comment"
+        Me.Comment.HeaderText = "Comment"
+        Me.Comment.Name = "Comment"
+        Me.Comment.Width = 800
+        '
+        'dgvWorkorderLabor
+        '
+        Me.dgvWorkorderLabor.AllowUserToDeleteRows = False
+        Me.dgvWorkorderLabor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvWorkorderLabor.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.WorkorderLaborID, Me.WorkorderLaborVersion, Me.WorkorderLaborLastUpdated, Me.WorkorderLaborDeleted, Me.WorkorderLaborWorkorderID, Me.TechID, Me.LaborDate, Me.LaborHours})
+        Me.dgvWorkorderLabor.Location = New System.Drawing.Point(254, 292)
+        Me.dgvWorkorderLabor.Name = "dgvWorkorderLabor"
+        Me.dgvWorkorderLabor.Size = New System.Drawing.Size(385, 110)
+        Me.dgvWorkorderLabor.TabIndex = 14
+        '
+        'WorkorderLaborID
+        '
+        Me.WorkorderLaborID.DataPropertyName = "ID"
+        Me.WorkorderLaborID.HeaderText = "ID"
+        Me.WorkorderLaborID.Name = "WorkorderLaborID"
+        Me.WorkorderLaborID.Visible = False
+        '
+        'WorkorderLaborVersion
+        '
+        Me.WorkorderLaborVersion.DataPropertyName = "Version"
+        Me.WorkorderLaborVersion.HeaderText = "Version"
+        Me.WorkorderLaborVersion.Name = "WorkorderLaborVersion"
+        Me.WorkorderLaborVersion.Visible = False
+        '
+        'WorkorderLaborLastUpdated
+        '
+        Me.WorkorderLaborLastUpdated.DataPropertyName = "LastUpdated"
+        Me.WorkorderLaborLastUpdated.HeaderText = "Last Updated"
+        Me.WorkorderLaborLastUpdated.Name = "WorkorderLaborLastUpdated"
+        Me.WorkorderLaborLastUpdated.Visible = False
+        '
+        'WorkorderLaborDeleted
+        '
+        Me.WorkorderLaborDeleted.DataPropertyName = "Deleted"
+        Me.WorkorderLaborDeleted.HeaderText = "Deleted"
+        Me.WorkorderLaborDeleted.Name = "WorkorderLaborDeleted"
+        Me.WorkorderLaborDeleted.Visible = False
+        '
+        'WorkorderLaborWorkorderID
+        '
+        Me.WorkorderLaborWorkorderID.DataPropertyName = "WorkorderID"
+        Me.WorkorderLaborWorkorderID.HeaderText = "Workorder ID"
+        Me.WorkorderLaborWorkorderID.Name = "WorkorderLaborWorkorderID"
+        Me.WorkorderLaborWorkorderID.Visible = False
+        '
+        'TechID
+        '
+        Me.TechID.DataPropertyName = "TechID"
+        Me.TechID.HeaderText = "Tech ID"
+        Me.TechID.Name = "TechID"
+        '
+        'LaborDate
+        '
+        Me.LaborDate.DataPropertyName = "Date"
+        Me.LaborDate.HeaderText = "Date"
+        Me.LaborDate.Name = "LaborDate"
+        '
+        'LaborHours
+        '
+        Me.LaborHours.DataPropertyName = "LaborHours"
+        Me.LaborHours.HeaderText = "Labor Hours"
+        Me.LaborHours.Name = "LaborHours"
+        '
+        'dgvWorkorderPart
+        '
+        Me.dgvWorkorderPart.AllowUserToDeleteRows = False
+        Me.dgvWorkorderPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvWorkorderPart.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.WorkorderPartID, Me.WorkorderPartVersion, Me.WorkorderPartLastUpdated, Me.WorkorderPartDeleted, Me.WorkorderID, Me.PartID, Me.Quantity, Me.CostPrice})
+        Me.dgvWorkorderPart.Location = New System.Drawing.Point(254, 176)
+        Me.dgvWorkorderPart.Name = "dgvWorkorderPart"
+        Me.dgvWorkorderPart.Size = New System.Drawing.Size(385, 110)
+        Me.dgvWorkorderPart.TabIndex = 13
+        '
+        'WorkorderPartID
+        '
+        Me.WorkorderPartID.DataPropertyName = "ID"
+        Me.WorkorderPartID.HeaderText = "ID"
+        Me.WorkorderPartID.Name = "WorkorderPartID"
+        Me.WorkorderPartID.Visible = False
+        '
+        'WorkorderPartVersion
+        '
+        Me.WorkorderPartVersion.DataPropertyName = "Version"
+        Me.WorkorderPartVersion.HeaderText = "Version"
+        Me.WorkorderPartVersion.Name = "WorkorderPartVersion"
+        Me.WorkorderPartVersion.Visible = False
+        '
+        'WorkorderPartLastUpdated
+        '
+        Me.WorkorderPartLastUpdated.DataPropertyName = "LastUpdated"
+        Me.WorkorderPartLastUpdated.HeaderText = "LastUpdated"
+        Me.WorkorderPartLastUpdated.Name = "WorkorderPartLastUpdated"
+        Me.WorkorderPartLastUpdated.Visible = False
+        '
+        'WorkorderPartDeleted
+        '
+        Me.WorkorderPartDeleted.DataPropertyName = "Deleted"
+        Me.WorkorderPartDeleted.HeaderText = "Deleted"
+        Me.WorkorderPartDeleted.Name = "WorkorderPartDeleted"
+        Me.WorkorderPartDeleted.Visible = False
+        '
+        'WorkorderID
+        '
+        Me.WorkorderID.DataPropertyName = "WorkorderID"
+        Me.WorkorderID.HeaderText = "WorkorderID"
+        Me.WorkorderID.Name = "WorkorderID"
+        Me.WorkorderID.Visible = False
+        '
+        'PartID
+        '
+        Me.PartID.DataPropertyName = "PartID"
+        Me.PartID.HeaderText = "PartID"
+        Me.PartID.Name = "PartID"
+        '
+        'Quantity
+        '
+        Me.Quantity.DataPropertyName = "Quantity"
+        Me.Quantity.HeaderText = "Quantity"
+        Me.Quantity.Name = "Quantity"
+        '
+        'CostPrice
+        '
+        Me.CostPrice.DataPropertyName = "CostPrice"
+        Me.CostPrice.HeaderText = "CostPrice"
+        Me.CostPrice.Name = "CostPrice"
+        '
+        'dgvWorkorder
+        '
+        Me.dgvWorkorder.AllowUserToDeleteRows = False
+        Me.dgvWorkorder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvWorkorder.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewCheckBoxColumn1, Me.CustomerID, Me.MakeModelID, Me.Serial, Me.DateOpened, Me.DateClosed, Me.LaborRate, Me.Cost, Me.TaxID, Me.TotalCost})
+        Me.dgvWorkorder.Location = New System.Drawing.Point(22, 35)
+        Me.dgvWorkorder.Name = "dgvWorkorder"
+        Me.dgvWorkorder.Size = New System.Drawing.Size(862, 135)
+        Me.dgvWorkorder.TabIndex = 12
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Visible = False
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Version"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Version"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Visible = False
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "LastUpdated"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Last Updated"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Visible = False
+        '
+        'DataGridViewCheckBoxColumn1
+        '
+        Me.DataGridViewCheckBoxColumn1.DataPropertyName = "Deleted"
+        Me.DataGridViewCheckBoxColumn1.HeaderText = "Deleted"
+        Me.DataGridViewCheckBoxColumn1.Name = "DataGridViewCheckBoxColumn1"
+        Me.DataGridViewCheckBoxColumn1.Visible = False
+        Me.DataGridViewCheckBoxColumn1.Width = 50
+        '
+        'CustomerID
+        '
+        Me.CustomerID.DataPropertyName = "CustomerID"
+        Me.CustomerID.HeaderText = "Customer ID"
+        Me.CustomerID.Name = "CustomerID"
+        '
+        'MakeModelID
+        '
+        Me.MakeModelID.DataPropertyName = "MakeModelID"
+        Me.MakeModelID.HeaderText = "Make Model ID"
+        Me.MakeModelID.Name = "MakeModelID"
+        '
+        'Serial
+        '
+        Me.Serial.DataPropertyName = "Serial"
+        Me.Serial.HeaderText = "Serial"
+        Me.Serial.Name = "Serial"
+        '
+        'DateOpened
+        '
+        Me.DateOpened.DataPropertyName = "DateOpened"
+        Me.DateOpened.HeaderText = "Date Opened"
+        Me.DateOpened.Name = "DateOpened"
+        Me.DateOpened.Width = 75
+        '
+        'DateClosed
+        '
+        Me.DateClosed.DataPropertyName = "DateClosed"
+        Me.DateClosed.HeaderText = "Date Closed"
+        Me.DateClosed.Name = "DateClosed"
+        Me.DateClosed.Width = 75
+        '
+        'LaborRate
+        '
+        Me.LaborRate.DataPropertyName = "LaborRate"
+        Me.LaborRate.HeaderText = "Labor Rate"
+        Me.LaborRate.Name = "LaborRate"
+        Me.LaborRate.Width = 75
+        '
+        'Cost
+        '
+        Me.Cost.DataPropertyName = "Cost"
+        Me.Cost.HeaderText = "Cost"
+        Me.Cost.Name = "Cost"
+        '
+        'TaxID
+        '
+        Me.TaxID.DataPropertyName = "TaxID"
+        Me.TaxID.HeaderText = "Tax ID"
+        Me.TaxID.Name = "TaxID"
+        '
+        'TotalCost
+        '
+        Me.TotalCost.DataPropertyName = "TotalCost"
+        Me.TotalCost.HeaderText = "Total Cost"
+        Me.TotalCost.Name = "TotalCost"
+        Me.TotalCost.Width = 75
         '
         'frmCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(895, 549)
+        Me.ClientSize = New System.Drawing.Size(965, 636)
         Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmCustomer"
         Me.Text = "Customer Account"
         Me.TabControl1.ResumeLayout(False)
@@ -712,7 +1064,15 @@ Partial Class frmCustomer
         CType(Me.dgvCustomerPhone, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvCustomerAddress, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvCustomer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabAdd.ResumeLayout(False)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        CType(Me.dgvWorkorderComment, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvWorkorderLabor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvWorkorderPart, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvWorkorder, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
@@ -784,4 +1144,46 @@ Partial Class frmCustomer
     Friend WithEvents Deleted As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents CustomerName As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents tabAdd As System.Windows.Forms.TabPage
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuSave As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents dgvWorkorderComment As System.Windows.Forms.DataGridView
+    Friend WithEvents WorkorderCommentID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderCommentVersion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderCommentLastUpdated As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderCommentDeleted As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents WorkorderCommentWorkorderID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Comment As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgvWorkorderLabor As System.Windows.Forms.DataGridView
+    Friend WithEvents WorkorderLaborID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderLaborVersion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderLaborLastUpdated As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderLaborDeleted As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents WorkorderLaborWorkorderID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TechID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LaborDate As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LaborHours As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgvWorkorderPart As System.Windows.Forms.DataGridView
+    Friend WithEvents WorkorderPartID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderPartVersion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderPartLastUpdated As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents WorkorderPartDeleted As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents WorkorderID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PartID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Quantity As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CostPrice As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgvWorkorder As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewCheckBoxColumn1 As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents CustomerID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MakeModelID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Serial As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DateOpened As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DateClosed As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LaborRate As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Cost As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TaxID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TotalCost As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

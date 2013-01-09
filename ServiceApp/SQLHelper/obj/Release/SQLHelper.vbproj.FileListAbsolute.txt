@@ -1,0 +1,13 @@
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Release\SQLHelper.dll
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Release\SQLHelper.pdb
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Release\SQLHelper.xml
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Release\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Release\DatatypeHelper.pdb
+H:\git\ServiceApp\ServiceApp\SQLHelper\bin\Release\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\SQLHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\SQLHelper.dll
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\SQLHelper.xml
+H:\git\ServiceApp\ServiceApp\SQLHelper\obj\Release\SQLHelper.pdb

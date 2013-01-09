@@ -1,0 +1,10 @@
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\bin\Release\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\bin\Release\ConfigurationHelper.pdb
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\bin\Release\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\ConfigurationHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\ConfigurationHelper\obj\Release\ConfigurationHelper.pdb

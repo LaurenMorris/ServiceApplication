@@ -23,7 +23,7 @@ H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.frmMa
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.frmManufacturer.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.frmParts.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.frmTechnician.resources
-H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.frmWorkorder.resources
+H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.frmWorkorderNew.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\FinalServiceApp.Resources.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\GenerateResource.read.1.tlog
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Debug\GenerateResource.write.1.tlog

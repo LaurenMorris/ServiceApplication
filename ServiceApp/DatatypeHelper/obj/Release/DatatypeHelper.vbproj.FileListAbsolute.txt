@@ -1,0 +1,10 @@
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\bin\Release\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\bin\Release\DatatypeHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\bin\Release\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\DatatypeHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\DatatypeHelper.dll
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\DatatypeHelper.xml
+H:\git\ServiceApp\ServiceApp\DatatypeHelper\obj\Release\DatatypeHelper.pdb

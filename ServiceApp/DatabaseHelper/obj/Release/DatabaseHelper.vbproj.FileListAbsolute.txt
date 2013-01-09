@@ -1,0 +1,13 @@
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Release\DatabaseHelper.dll
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Release\DatabaseHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Release\DatabaseHelper.xml
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Release\ConfigurationHelper.dll
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Release\ConfigurationHelper.pdb
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\bin\Release\ConfigurationHelper.xml
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\ResolveAssemblyReference.cache
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\DatabaseHelper.Resources.resources
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\GenerateResource.read.1.tlog
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\GenerateResource.write.1.tlog
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\DatabaseHelper.dll
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\DatabaseHelper.xml
+H:\git\ServiceApp\ServiceApp\DatabaseHelper\obj\Release\DatabaseHelper.pdb

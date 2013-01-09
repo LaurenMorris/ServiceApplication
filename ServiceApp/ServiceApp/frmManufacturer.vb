@@ -245,6 +245,7 @@ Public Class frmManufacturer
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
     Private Sub dgvManufacturer_RowHeaderMouseDoubleClick(sender As Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvManufacturer.RowHeaderMouseDoubleClick
         mnuSave.Enabled = False
         Dim m As Manufacturer = Me.dgvManufacturer.SelectedRows(0).DataBoundItem
