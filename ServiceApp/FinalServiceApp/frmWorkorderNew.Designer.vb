@@ -37,13 +37,14 @@ Partial Class frmWorkorderNew
         Me.btnOpen = New System.Windows.Forms.Button()
         Me.txtModel = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblStatus = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(146, 84)
+        Me.Label1.Location = New System.Drawing.Point(13, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 16)
         Me.Label1.TabIndex = 0
@@ -53,7 +54,7 @@ Partial Class frmWorkorderNew
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(371, 86)
+        Me.Label3.Location = New System.Drawing.Point(209, 25)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 16)
         Me.Label3.TabIndex = 2
@@ -61,9 +62,9 @@ Partial Class frmWorkorderNew
         '
         'lblDateOpened
         '
-        Me.lblDateOpened.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblDateOpened.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.lblDateOpened.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDateOpened.Location = New System.Drawing.Point(469, 80)
+        Me.lblDateOpened.Location = New System.Drawing.Point(307, 19)
         Me.lblDateOpened.Name = "lblDateOpened"
         Me.lblDateOpened.Size = New System.Drawing.Size(104, 27)
         Me.lblDateOpened.TabIndex = 3
@@ -74,7 +75,7 @@ Partial Class frmWorkorderNew
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(184, 159)
+        Me.Label7.Location = New System.Drawing.Point(199, 111)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(71, 16)
         Me.Label7.TabIndex = 6
@@ -84,7 +85,7 @@ Partial Class frmWorkorderNew
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(257, 214)
+        Me.Label8.Location = New System.Drawing.Point(257, 168)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(48, 16)
         Me.Label8.TabIndex = 7
@@ -94,7 +95,7 @@ Partial Class frmWorkorderNew
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(205, 308)
+        Me.Label9.Location = New System.Drawing.Point(205, 262)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(100, 16)
         Me.Label9.TabIndex = 8
@@ -104,7 +105,7 @@ Partial Class frmWorkorderNew
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(68, 405)
+        Me.Label10.Location = New System.Drawing.Point(45, 342)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(78, 16)
         Me.Label10.TabIndex = 9
@@ -114,7 +115,7 @@ Partial Class frmWorkorderNew
         '
         Me.cboCustomer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCustomer.FormattingEnabled = True
-        Me.cboCustomer.Location = New System.Drawing.Point(261, 156)
+        Me.cboCustomer.Location = New System.Drawing.Point(276, 108)
         Me.cboCustomer.Name = "cboCustomer"
         Me.cboCustomer.Size = New System.Drawing.Size(242, 24)
         Me.cboCustomer.TabIndex = 14
@@ -122,7 +123,7 @@ Partial Class frmWorkorderNew
         'txtMake
         '
         Me.txtMake.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMake.Location = New System.Drawing.Point(311, 211)
+        Me.txtMake.Location = New System.Drawing.Point(311, 165)
         Me.txtMake.Name = "txtMake"
         Me.txtMake.Size = New System.Drawing.Size(155, 26)
         Me.txtMake.TabIndex = 15
@@ -130,7 +131,7 @@ Partial Class frmWorkorderNew
         'txtSerial
         '
         Me.txtSerial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSerial.Location = New System.Drawing.Point(311, 302)
+        Me.txtSerial.Location = New System.Drawing.Point(311, 256)
         Me.txtSerial.Name = "txtSerial"
         Me.txtSerial.Size = New System.Drawing.Size(155, 26)
         Me.txtSerial.TabIndex = 16
@@ -138,7 +139,7 @@ Partial Class frmWorkorderNew
         'txtComment
         '
         Me.txtComment.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtComment.Location = New System.Drawing.Point(157, 378)
+        Me.txtComment.Location = New System.Drawing.Point(134, 315)
         Me.txtComment.Multiline = True
         Me.txtComment.Name = "txtComment"
         Me.txtComment.Size = New System.Drawing.Size(511, 93)
@@ -146,19 +147,19 @@ Partial Class frmWorkorderNew
         '
         'lblWorkorder
         '
-        Me.lblWorkorder.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblWorkorder.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.lblWorkorder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWorkorder.Location = New System.Drawing.Point(227, 80)
+        Me.lblWorkorder.Location = New System.Drawing.Point(97, 21)
         Me.lblWorkorder.Name = "lblWorkorder"
         Me.lblWorkorder.Size = New System.Drawing.Size(104, 23)
         Me.lblWorkorder.TabIndex = 22
         Me.lblWorkorder.Text = "34225"
-        Me.lblWorkorder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblWorkorder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnOpen
         '
         Me.btnOpen.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOpen.Location = New System.Drawing.Point(346, 536)
+        Me.btnOpen.Location = New System.Drawing.Point(338, 439)
         Me.btnOpen.Name = "btnOpen"
         Me.btnOpen.Size = New System.Drawing.Size(92, 43)
         Me.btnOpen.TabIndex = 23
@@ -168,7 +169,7 @@ Partial Class frmWorkorderNew
         'txtModel
         '
         Me.txtModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtModel.Location = New System.Drawing.Point(311, 258)
+        Me.txtModel.Location = New System.Drawing.Point(311, 212)
         Me.txtModel.Name = "txtModel"
         Me.txtModel.Size = New System.Drawing.Size(155, 26)
         Me.txtModel.TabIndex = 24
@@ -177,18 +178,30 @@ Partial Class frmWorkorderNew
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(251, 263)
+        Me.Label2.Location = New System.Drawing.Point(251, 217)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 16)
         Me.Label2.TabIndex = 25
         Me.Label2.Text = "Model :"
+        '
+        'lblStatus
+        '
+        Me.lblStatus.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.Location = New System.Drawing.Point(541, 17)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(104, 27)
+        Me.lblStatus.TabIndex = 26
+        Me.lblStatus.Text = "Status"
+        Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmWorkorderNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(788, 632)
+        Me.ClientSize = New System.Drawing.Size(788, 500)
+        Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtModel)
         Me.Controls.Add(Me.btnOpen)
@@ -225,4 +238,5 @@ Partial Class frmWorkorderNew
     Friend WithEvents btnOpen As System.Windows.Forms.Button
     Friend WithEvents txtModel As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblStatus As System.Windows.Forms.Label
 End Class
