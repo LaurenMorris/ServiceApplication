@@ -99,6 +99,31 @@ Partial Class frmManufacturer
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblManufacturer = New System.Windows.Forms.Label()
+        Me.lblManufacturerID = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.cboAddressType = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.cboEmailType = New System.Windows.Forms.ComboBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.cboPhoneType = New System.Windows.Forms.ComboBox()
+        Me.lblStatus = New System.Windows.Forms.Label()
+        Me.txtNameAdd = New System.Windows.Forms.TextBox()
+        Me.txtContactAdd = New System.Windows.Forms.TextBox()
+        Me.txtAddressAdd = New System.Windows.Forms.TextBox()
+        Me.txtCityAdd = New System.Windows.Forms.TextBox()
+        Me.txtStateAdd = New System.Windows.Forms.TextBox()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.txtZipAdd = New System.Windows.Forms.TextBox()
+        Me.txtEmailAdd = New System.Windows.Forms.TextBox()
+        Me.txtPhoneAdd = New System.Windows.Forms.TextBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.dgvManufacturerEmail, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,16 +132,18 @@ Partial Class frmManufacturer
         CType(Me.dgvManufacturer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(51, 67)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Location = New System.Drawing.Point(52, 50)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(761, 540)
+        Me.TabControl1.Size = New System.Drawing.Size(761, 537)
         Me.TabControl1.TabIndex = 2
         '
         'TabPage1
@@ -129,9 +156,9 @@ Partial Class frmManufacturer
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(753, 514)
+        Me.TabPage1.Size = New System.Drawing.Size(753, 511)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Current"
+        Me.TabPage1.Text = "Current / Edit"
         '
         'dgvManufacturerEmail
         '
@@ -395,7 +422,7 @@ Partial Class frmManufacturer
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(753, 514)
+        Me.TabPage2.Size = New System.Drawing.Size(753, 511)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Search"
         '
@@ -762,15 +789,270 @@ Partial Class frmManufacturer
         'mnuSave
         '
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(152, 22)
+        Me.mnuSave.Size = New System.Drawing.Size(98, 22)
         Me.mnuSave.Text = "Save"
+        '
+        'lblManufacturer
+        '
+        Me.lblManufacturer.AutoSize = True
+        Me.lblManufacturer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblManufacturer.Location = New System.Drawing.Point(43, 29)
+        Me.lblManufacturer.Name = "lblManufacturer"
+        Me.lblManufacturer.Size = New System.Drawing.Size(110, 16)
+        Me.lblManufacturer.TabIndex = 0
+        Me.lblManufacturer.Text = "Manufacturer ID : "
+        '
+        'lblManufacturerID
+        '
+        Me.lblManufacturerID.AutoSize = True
+        Me.lblManufacturerID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblManufacturerID.Location = New System.Drawing.Point(157, 29)
+        Me.lblManufacturerID.Name = "lblManufacturerID"
+        Me.lblManufacturerID.Size = New System.Drawing.Size(56, 16)
+        Me.lblManufacturerID.TabIndex = 1
+        Me.lblManufacturerID.Text = "Label10"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(11, 91)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(134, 16)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "Manufacturer Name : "
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(393, 91)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(62, 16)
+        Me.Label12.TabIndex = 3
+        Me.Label12.Text = "Contact : "
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(77, 170)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(68, 16)
+        Me.Label13.TabIndex = 4
+        Me.Label13.Text = "Address : "
+        '
+        'cboAddressType
+        '
+        Me.cboAddressType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboAddressType.FormattingEnabled = True
+        Me.cboAddressType.Location = New System.Drawing.Point(381, 264)
+        Me.cboAddressType.Name = "cboAddressType"
+        Me.cboAddressType.Size = New System.Drawing.Size(141, 24)
+        Me.cboAddressType.TabIndex = 5
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(106, 200)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(39, 16)
+        Me.Label14.TabIndex = 6
+        Me.Label14.Text = "City : "
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(97, 232)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(48, 16)
+        Me.Label15.TabIndex = 7
+        Me.Label15.Text = "State : "
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(77, 264)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(72, 16)
+        Me.Label16.TabIndex = 8
+        Me.Label16.Text = "Zip Code : "
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(94, 344)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(51, 16)
+        Me.Label17.TabIndex = 9
+        Me.Label17.Text = "Email : "
+        '
+        'cboEmailType
+        '
+        Me.cboEmailType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboEmailType.FormattingEnabled = True
+        Me.cboEmailType.Location = New System.Drawing.Point(381, 341)
+        Me.cboEmailType.Name = "cboEmailType"
+        Me.cboEmailType.Size = New System.Drawing.Size(141, 24)
+        Me.cboEmailType.TabIndex = 10
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(89, 393)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(56, 16)
+        Me.Label18.TabIndex = 11
+        Me.Label18.Text = "Phone : "
+        '
+        'cboPhoneType
+        '
+        Me.cboPhoneType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboPhoneType.FormattingEnabled = True
+        Me.cboPhoneType.Location = New System.Drawing.Point(381, 390)
+        Me.cboPhoneType.Name = "cboPhoneType"
+        Me.cboPhoneType.Size = New System.Drawing.Size(141, 24)
+        Me.cboPhoneType.TabIndex = 12
+        '
+        'lblStatus
+        '
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.Location = New System.Drawing.Point(477, 29)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(45, 16)
+        Me.lblStatus.TabIndex = 13
+        Me.lblStatus.Text = "Status"
+        '
+        'txtNameAdd
+        '
+        Me.txtNameAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNameAdd.Location = New System.Drawing.Point(159, 88)
+        Me.txtNameAdd.Name = "txtNameAdd"
+        Me.txtNameAdd.Size = New System.Drawing.Size(214, 22)
+        Me.txtNameAdd.TabIndex = 14
+        '
+        'txtContactAdd
+        '
+        Me.txtContactAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactAdd.Location = New System.Drawing.Point(461, 88)
+        Me.txtContactAdd.Name = "txtContactAdd"
+        Me.txtContactAdd.Size = New System.Drawing.Size(199, 22)
+        Me.txtContactAdd.TabIndex = 15
+        '
+        'txtAddressAdd
+        '
+        Me.txtAddressAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddressAdd.Location = New System.Drawing.Point(160, 167)
+        Me.txtAddressAdd.Name = "txtAddressAdd"
+        Me.txtAddressAdd.Size = New System.Drawing.Size(213, 22)
+        Me.txtAddressAdd.TabIndex = 16
+        '
+        'txtCityAdd
+        '
+        Me.txtCityAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCityAdd.Location = New System.Drawing.Point(160, 200)
+        Me.txtCityAdd.Name = "txtCityAdd"
+        Me.txtCityAdd.Size = New System.Drawing.Size(213, 22)
+        Me.txtCityAdd.TabIndex = 17
+        '
+        'txtStateAdd
+        '
+        Me.txtStateAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStateAdd.Location = New System.Drawing.Point(160, 232)
+        Me.txtStateAdd.Name = "txtStateAdd"
+        Me.txtStateAdd.Size = New System.Drawing.Size(109, 22)
+        Me.txtStateAdd.TabIndex = 18
+        '
+        'TabPage3
+        '
+        Me.TabPage3.BackColor = System.Drawing.Color.Silver
+        Me.TabPage3.Controls.Add(Me.Label9)
+        Me.TabPage3.Controls.Add(Me.btnAdd)
+        Me.TabPage3.Controls.Add(Me.txtPhoneAdd)
+        Me.TabPage3.Controls.Add(Me.txtEmailAdd)
+        Me.TabPage3.Controls.Add(Me.txtZipAdd)
+        Me.TabPage3.Controls.Add(Me.txtStateAdd)
+        Me.TabPage3.Controls.Add(Me.txtCityAdd)
+        Me.TabPage3.Controls.Add(Me.txtAddressAdd)
+        Me.TabPage3.Controls.Add(Me.txtContactAdd)
+        Me.TabPage3.Controls.Add(Me.txtNameAdd)
+        Me.TabPage3.Controls.Add(Me.lblStatus)
+        Me.TabPage3.Controls.Add(Me.cboPhoneType)
+        Me.TabPage3.Controls.Add(Me.Label18)
+        Me.TabPage3.Controls.Add(Me.cboEmailType)
+        Me.TabPage3.Controls.Add(Me.Label17)
+        Me.TabPage3.Controls.Add(Me.Label16)
+        Me.TabPage3.Controls.Add(Me.Label15)
+        Me.TabPage3.Controls.Add(Me.Label14)
+        Me.TabPage3.Controls.Add(Me.cboAddressType)
+        Me.TabPage3.Controls.Add(Me.Label13)
+        Me.TabPage3.Controls.Add(Me.Label12)
+        Me.TabPage3.Controls.Add(Me.Label11)
+        Me.TabPage3.Controls.Add(Me.lblManufacturerID)
+        Me.TabPage3.Controls.Add(Me.lblManufacturer)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(753, 511)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Add New"
+        '
+        'txtZipAdd
+        '
+        Me.txtZipAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtZipAdd.Location = New System.Drawing.Point(160, 264)
+        Me.txtZipAdd.Name = "txtZipAdd"
+        Me.txtZipAdd.Size = New System.Drawing.Size(109, 22)
+        Me.txtZipAdd.TabIndex = 19
+        '
+        'txtEmailAdd
+        '
+        Me.txtEmailAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmailAdd.Location = New System.Drawing.Point(160, 341)
+        Me.txtEmailAdd.Name = "txtEmailAdd"
+        Me.txtEmailAdd.Size = New System.Drawing.Size(199, 22)
+        Me.txtEmailAdd.TabIndex = 20
+        '
+        'txtPhoneAdd
+        '
+        Me.txtPhoneAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhoneAdd.Location = New System.Drawing.Point(160, 392)
+        Me.txtPhoneAdd.Name = "txtPhoneAdd"
+        Me.txtPhoneAdd.Size = New System.Drawing.Size(199, 22)
+        Me.txtPhoneAdd.TabIndex = 21
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.Location = New System.Drawing.Point(595, 368)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(94, 46)
+        Me.btnAdd.TabIndex = 22
+        Me.btnAdd.Text = "Add Manufacturer"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(435, 232)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(40, 16)
+        Me.Label9.TabIndex = 23
+        Me.Label9.Text = "Type"
         '
         'frmManufacturer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(882, 682)
+        Me.ClientSize = New System.Drawing.Size(882, 599)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -786,6 +1068,8 @@ Partial Class frmManufacturer
         Me.TabPage2.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -867,4 +1151,29 @@ Partial Class frmManufacturer
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuSave As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents txtPhoneAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmailAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtZipAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtStateAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtCityAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtAddressAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtContactAdd As System.Windows.Forms.TextBox
+    Friend WithEvents txtNameAdd As System.Windows.Forms.TextBox
+    Friend WithEvents lblStatus As System.Windows.Forms.Label
+    Friend WithEvents cboPhoneType As System.Windows.Forms.ComboBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents cboEmailType As System.Windows.Forms.ComboBox
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents cboAddressType As System.Windows.Forms.ComboBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents lblManufacturerID As System.Windows.Forms.Label
+    Friend WithEvents lblManufacturer As System.Windows.Forms.Label
 End Class
