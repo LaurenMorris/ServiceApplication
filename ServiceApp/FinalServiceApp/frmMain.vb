@@ -21,7 +21,7 @@
     End Sub
 
     Private Sub btnParts_Click(sender As System.Object, e As System.EventArgs) Handles btnParts.Click
-        frmParts.Show()
+        frmPart.Show()
 
     End Sub
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmParts
+Partial Class frmPart
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,23 +27,23 @@ Partial Class frmParts
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.dgvPart = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblPartID = New System.Windows.Forms.Label()
-        Me.lblStatus = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.cboManufacturer = New System.Windows.Forms.ComboBox()
-        Me.txtList = New System.Windows.Forms.TextBox()
-        Me.txtMarkup = New System.Windows.Forms.TextBox()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.txtMarkup = New System.Windows.Forms.TextBox()
+        Me.txtList = New System.Windows.Forms.TextBox()
+        Me.cboManufacturer = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblStatus = New System.Windows.Forms.Label()
+        Me.lblPartID = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
         CType(Me.dgvPart, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -91,6 +91,15 @@ Partial Class frmParts
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "View / Edit Current"
         '
+        'dgvPart
+        '
+        Me.dgvPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPart.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvPart.Location = New System.Drawing.Point(3, 3)
+        Me.dgvPart.Name = "dgvPart"
+        Me.dgvPart.Size = New System.Drawing.Size(624, 380)
+        Me.dgvPart.TabIndex = 2
+        '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.Silver
@@ -111,64 +120,41 @@ Partial Class frmParts
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Add New"
         '
-        'dgvPart
+        'btnAdd
         '
-        Me.dgvPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPart.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvPart.Location = New System.Drawing.Point(3, 3)
-        Me.dgvPart.Name = "dgvPart"
-        Me.dgvPart.Size = New System.Drawing.Size(624, 380)
-        Me.dgvPart.TabIndex = 2
+        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.Location = New System.Drawing.Point(363, 222)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.TabIndex = 9
+        Me.btnAdd.Text = "Add Part"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'Label1
+        'txtMarkup
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(53, 28)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Part ID : "
+        Me.txtMarkup.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMarkup.Location = New System.Drawing.Point(229, 222)
+        Me.txtMarkup.Name = "txtMarkup"
+        Me.txtMarkup.Size = New System.Drawing.Size(100, 22)
+        Me.txtMarkup.TabIndex = 8
         '
-        'lblPartID
+        'txtList
         '
-        Me.lblPartID.AutoSize = True
-        Me.lblPartID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPartID.Location = New System.Drawing.Point(123, 28)
-        Me.lblPartID.Name = "lblPartID"
-        Me.lblPartID.Size = New System.Drawing.Size(49, 16)
-        Me.lblPartID.TabIndex = 1
-        Me.lblPartID.Text = "Label2"
+        Me.txtList.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtList.Location = New System.Drawing.Point(229, 188)
+        Me.txtList.Name = "txtList"
+        Me.txtList.Size = New System.Drawing.Size(100, 22)
+        Me.txtList.TabIndex = 7
         '
-        'lblStatus
+        'cboManufacturer
         '
-        Me.lblStatus.AutoSize = True
-        Me.lblStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.Location = New System.Drawing.Point(410, 38)
-        Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(45, 16)
-        Me.lblStatus.TabIndex = 2
-        Me.lblStatus.Text = "Status"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(134, 159)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(94, 16)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Manufacturer : "
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(154, 191)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 16)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "List Price : "
+        Me.cboManufacturer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboManufacturer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboManufacturer.FormattingEnabled = True
+        Me.cboManufacturer.Location = New System.Drawing.Point(229, 151)
+        Me.cboManufacturer.Name = "cboManufacturer"
+        Me.cboManufacturer.Size = New System.Drawing.Size(209, 24)
+        Me.cboManufacturer.TabIndex = 6
         '
         'Label6
         '
@@ -180,41 +166,58 @@ Partial Class frmParts
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Markup Price : "
         '
-        'cboManufacturer
+        'Label5
         '
-        Me.cboManufacturer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboManufacturer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboManufacturer.FormattingEnabled = True
-        Me.cboManufacturer.Location = New System.Drawing.Point(229, 151)
-        Me.cboManufacturer.Name = "cboManufacturer"
-        Me.cboManufacturer.Size = New System.Drawing.Size(181, 24)
-        Me.cboManufacturer.TabIndex = 6
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(154, 191)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 16)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "List Price : "
         '
-        'txtList
+        'Label4
         '
-        Me.txtList.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtList.Location = New System.Drawing.Point(229, 188)
-        Me.txtList.Name = "txtList"
-        Me.txtList.Size = New System.Drawing.Size(100, 22)
-        Me.txtList.TabIndex = 7
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(134, 159)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(94, 16)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Manufacturer : "
         '
-        'txtMarkup
+        'lblStatus
         '
-        Me.txtMarkup.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMarkup.Location = New System.Drawing.Point(229, 222)
-        Me.txtMarkup.Name = "txtMarkup"
-        Me.txtMarkup.Size = New System.Drawing.Size(100, 22)
-        Me.txtMarkup.TabIndex = 8
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.Location = New System.Drawing.Point(410, 38)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(45, 16)
+        Me.lblStatus.TabIndex = 2
+        Me.lblStatus.Text = "Status"
+        Me.lblStatus.Visible = False
         '
-        'btnAdd
+        'lblPartID
         '
-        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(371, 251)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
-        Me.btnAdd.TabIndex = 9
-        Me.btnAdd.Text = "Add Part"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.lblPartID.AutoSize = True
+        Me.lblPartID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPartID.Location = New System.Drawing.Point(123, 28)
+        Me.lblPartID.Name = "lblPartID"
+        Me.lblPartID.Size = New System.Drawing.Size(49, 16)
+        Me.lblPartID.TabIndex = 1
+        Me.lblPartID.Text = "Label2"
+        Me.lblPartID.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(53, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(57, 16)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Part ID : "
+        Me.Label1.Visible = False
         '
         'frmParts
         '
@@ -230,9 +233,9 @@ Partial Class frmParts
         Me.MenuStrip1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        CType(Me.dgvPart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.dgvPart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

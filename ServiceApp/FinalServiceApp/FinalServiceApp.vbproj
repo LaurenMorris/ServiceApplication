@@ -96,10 +96,10 @@
     <Compile Include="frmManufacturer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmParts.Designer.vb">
-      <DependentUpon>frmParts.vb</DependentUpon>
+    <Compile Include="frmPart.Designer.vb">
+      <DependentUpon>frmPart.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmParts.vb">
+    <Compile Include="frmPart.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTechnician.Designer.vb">
@@ -149,8 +149,8 @@
     <EmbeddedResource Include="frmManufacturer.resx">
       <DependentUpon>frmManufacturer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmParts.resx">
-      <DependentUpon>frmParts.vb</DependentUpon>
+    <EmbeddedResource Include="frmPart.resx">
+      <DependentUpon>frmPart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTechnician.resx">
       <DependentUpon>frmTechnician.vb</DependentUpon>
