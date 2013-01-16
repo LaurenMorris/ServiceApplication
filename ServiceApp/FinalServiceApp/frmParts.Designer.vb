@@ -73,6 +73,7 @@ Partial Class frmParts
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(28, 54)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -83,10 +84,10 @@ Partial Class frmParts
         '
         Me.TabPage1.BackColor = System.Drawing.Color.Silver
         Me.TabPage1.Controls.Add(Me.dgvPart)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(630, 389)
+        Me.TabPage1.Size = New System.Drawing.Size(630, 386)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "View / Edit Current"
         '
@@ -103,10 +104,10 @@ Partial Class frmParts
         Me.TabPage2.Controls.Add(Me.lblStatus)
         Me.TabPage2.Controls.Add(Me.lblPartID)
         Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(630, 389)
+        Me.TabPage2.Size = New System.Drawing.Size(630, 386)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Add New"
         '
@@ -116,7 +117,7 @@ Partial Class frmParts
         Me.dgvPart.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvPart.Location = New System.Drawing.Point(3, 3)
         Me.dgvPart.Name = "dgvPart"
-        Me.dgvPart.Size = New System.Drawing.Size(624, 383)
+        Me.dgvPart.Size = New System.Drawing.Size(624, 380)
         Me.dgvPart.TabIndex = 2
         '
         'Label1

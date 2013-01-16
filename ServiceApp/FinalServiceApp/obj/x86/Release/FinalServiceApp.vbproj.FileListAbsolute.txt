@@ -30,3 +30,4 @@ H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\GenerateResource.wr
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.exe
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.xml
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.pdb
+H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmWorkorderEdit.resources
