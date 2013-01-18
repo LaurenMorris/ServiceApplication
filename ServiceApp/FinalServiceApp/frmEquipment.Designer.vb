@@ -22,6 +22,7 @@ Partial Class frmEquipment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEquipment))
         Me.SuspendLayout()
         '
         'frmEquipment
@@ -30,8 +31,9 @@ Partial Class frmEquipment
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmEquipment"
-        Me.Text = "frmEquipment"
+        Me.Text = "Equipment"
         Me.ResumeLayout(False)
 
     End Sub

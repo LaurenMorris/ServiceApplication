@@ -22,6 +22,7 @@ Partial Class frmCustomer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCustomer))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabSearch = New System.Windows.Forms.TabPage()
         Me.btnSearchEmail = New System.Windows.Forms.Button()
@@ -90,10 +91,7 @@ Partial Class frmCustomer
         Me.LastUpdated = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Deleted = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tabAdd = New System.Windows.Forms.TabPage()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tabHistory = New System.Windows.Forms.TabPage()
         Me.dgvWorkorderComment = New System.Windows.Forms.DataGridView()
         Me.WorkorderCommentID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WorkorderCommentVersion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -133,6 +131,9 @@ Partial Class frmCustomer
         Me.Cost = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TaxID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalCost = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1.SuspendLayout()
         Me.tabSearch.SuspendLayout()
         Me.tabCurrent.SuspendLayout()
@@ -140,19 +141,21 @@ Partial Class frmCustomer
         CType(Me.dgvCustomerPhone, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvCustomerAddress, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvCustomer, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tabAdd.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
+        Me.tabHistory.SuspendLayout()
         CType(Me.dgvWorkorderComment, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvWorkorderLabor, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvWorkorderPart, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvWorkorder, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.tabSearch)
+        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
         Me.TabControl1.Controls.Add(Me.tabCurrent)
-        Me.TabControl1.Controls.Add(Me.tabAdd)
+        Me.TabControl1.Controls.Add(Me.tabHistory)
+        Me.TabControl1.Controls.Add(Me.tabSearch)
+        Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(24, 43)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -197,45 +200,49 @@ Partial Class frmCustomer
         Me.tabSearch.Controls.Add(Me.Label4)
         Me.tabSearch.Controls.Add(Me.Label3)
         Me.tabSearch.Controls.Add(Me.Label1)
-        Me.tabSearch.Location = New System.Drawing.Point(4, 22)
+        Me.tabSearch.Location = New System.Drawing.Point(4, 28)
         Me.tabSearch.Name = "tabSearch"
         Me.tabSearch.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabSearch.Size = New System.Drawing.Size(823, 468)
+        Me.tabSearch.Size = New System.Drawing.Size(921, 537)
         Me.tabSearch.TabIndex = 0
         Me.tabSearch.Text = "Search"
         '
         'btnSearchEmail
         '
-        Me.btnSearchEmail.Location = New System.Drawing.Point(626, 366)
+        Me.btnSearchEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearchEmail.Location = New System.Drawing.Point(626, 384)
         Me.btnSearchEmail.Name = "btnSearchEmail"
-        Me.btnSearchEmail.Size = New System.Drawing.Size(97, 26)
+        Me.btnSearchEmail.Size = New System.Drawing.Size(97, 28)
         Me.btnSearchEmail.TabIndex = 118
         Me.btnSearchEmail.Text = "Search Email"
         Me.btnSearchEmail.UseVisualStyleBackColor = True
         '
         'btnSearchPhone
         '
-        Me.btnSearchPhone.Location = New System.Drawing.Point(626, 310)
+        Me.btnSearchPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearchPhone.Location = New System.Drawing.Point(626, 299)
         Me.btnSearchPhone.Name = "btnSearchPhone"
-        Me.btnSearchPhone.Size = New System.Drawing.Size(97, 27)
+        Me.btnSearchPhone.Size = New System.Drawing.Size(97, 48)
         Me.btnSearchPhone.TabIndex = 117
         Me.btnSearchPhone.Text = "Search Phone"
         Me.btnSearchPhone.UseVisualStyleBackColor = True
         '
         'btnSearchAddress
         '
-        Me.btnSearchAddress.Location = New System.Drawing.Point(626, 177)
+        Me.btnSearchAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearchAddress.Location = New System.Drawing.Point(626, 173)
         Me.btnSearchAddress.Name = "btnSearchAddress"
-        Me.btnSearchAddress.Size = New System.Drawing.Size(97, 34)
+        Me.btnSearchAddress.Size = New System.Drawing.Size(97, 49)
         Me.btnSearchAddress.TabIndex = 116
         Me.btnSearchAddress.Text = "Search Address"
         Me.btnSearchAddress.UseVisualStyleBackColor = True
         '
         'btnSearchCustomer
         '
-        Me.btnSearchCustomer.Location = New System.Drawing.Point(626, 37)
+        Me.btnSearchCustomer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearchCustomer.Location = New System.Drawing.Point(626, 46)
         Me.btnSearchCustomer.Name = "btnSearchCustomer"
-        Me.btnSearchCustomer.Size = New System.Drawing.Size(97, 37)
+        Me.btnSearchCustomer.Size = New System.Drawing.Size(97, 49)
         Me.btnSearchCustomer.TabIndex = 115
         Me.btnSearchCustomer.Text = "Search Customer"
         Me.btnSearchCustomer.UseVisualStyleBackColor = True
@@ -243,265 +250,296 @@ Partial Class frmCustomer
         'cboEmailOrderBy
         '
         Me.cboEmailOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboEmailOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboEmailOrderBy.FormattingEnabled = True
-        Me.cboEmailOrderBy.Location = New System.Drawing.Point(520, 369)
+        Me.cboEmailOrderBy.Location = New System.Drawing.Point(545, 386)
         Me.cboEmailOrderBy.Name = "cboEmailOrderBy"
-        Me.cboEmailOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboEmailOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboEmailOrderBy.TabIndex = 114
         '
         'cboEmailSearch
         '
         Me.cboEmailSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboEmailSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboEmailSearch.FormattingEnabled = True
-        Me.cboEmailSearch.Location = New System.Drawing.Point(311, 370)
+        Me.cboEmailSearch.Location = New System.Drawing.Point(353, 387)
         Me.cboEmailSearch.Name = "cboEmailSearch"
-        Me.cboEmailSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboEmailSearch.Size = New System.Drawing.Size(121, 24)
         Me.cboEmailSearch.TabIndex = 113
         '
         'cboPhoneOrderBy
         '
         Me.cboPhoneOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboPhoneOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboPhoneOrderBy.FormattingEnabled = True
-        Me.cboPhoneOrderBy.Location = New System.Drawing.Point(520, 314)
+        Me.cboPhoneOrderBy.Location = New System.Drawing.Point(545, 312)
         Me.cboPhoneOrderBy.Name = "cboPhoneOrderBy"
-        Me.cboPhoneOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboPhoneOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboPhoneOrderBy.TabIndex = 112
         '
         'cboPhoneSearch
         '
         Me.cboPhoneSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboPhoneSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboPhoneSearch.FormattingEnabled = True
-        Me.cboPhoneSearch.Location = New System.Drawing.Point(311, 314)
+        Me.cboPhoneSearch.Location = New System.Drawing.Point(353, 312)
         Me.cboPhoneSearch.Name = "cboPhoneSearch"
-        Me.cboPhoneSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboPhoneSearch.Size = New System.Drawing.Size(121, 24)
         Me.cboPhoneSearch.TabIndex = 111
         '
         'cboZipOrderBy
         '
         Me.cboZipOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboZipOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboZipOrderBy.FormattingEnabled = True
-        Me.cboZipOrderBy.Location = New System.Drawing.Point(520, 242)
+        Me.cboZipOrderBy.Location = New System.Drawing.Point(545, 242)
         Me.cboZipOrderBy.Name = "cboZipOrderBy"
-        Me.cboZipOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboZipOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboZipOrderBy.TabIndex = 110
         '
         'cboZipSearch
         '
         Me.cboZipSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboZipSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboZipSearch.FormattingEnabled = True
-        Me.cboZipSearch.Location = New System.Drawing.Point(311, 241)
+        Me.cboZipSearch.Location = New System.Drawing.Point(353, 241)
         Me.cboZipSearch.Name = "cboZipSearch"
-        Me.cboZipSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboZipSearch.Size = New System.Drawing.Size(121, 24)
         Me.cboZipSearch.TabIndex = 109
         '
         'cboStateOrderBy
         '
         Me.cboStateOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboStateOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboStateOrderBy.FormattingEnabled = True
-        Me.cboStateOrderBy.Location = New System.Drawing.Point(520, 206)
+        Me.cboStateOrderBy.Location = New System.Drawing.Point(545, 206)
         Me.cboStateOrderBy.Name = "cboStateOrderBy"
-        Me.cboStateOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboStateOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboStateOrderBy.TabIndex = 108
         '
         'cboStateBool
         '
         Me.cboStateBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboStateBool.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboStateBool.FormattingEnabled = True
-        Me.cboStateBool.Location = New System.Drawing.Point(438, 206)
+        Me.cboStateBool.Location = New System.Drawing.Point(480, 205)
         Me.cboStateBool.Name = "cboStateBool"
-        Me.cboStateBool.Size = New System.Drawing.Size(76, 21)
+        Me.cboStateBool.Size = New System.Drawing.Size(59, 24)
         Me.cboStateBool.TabIndex = 107
         '
         'cboStateSearch
         '
         Me.cboStateSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboStateSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboStateSearch.FormattingEnabled = True
-        Me.cboStateSearch.Location = New System.Drawing.Point(311, 206)
+        Me.cboStateSearch.Location = New System.Drawing.Point(353, 206)
         Me.cboStateSearch.Name = "cboStateSearch"
-        Me.cboStateSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboStateSearch.Size = New System.Drawing.Size(121, 24)
         Me.cboStateSearch.TabIndex = 106
         '
         'cboCityOrderBy
         '
         Me.cboCityOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCityOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCityOrderBy.FormattingEnabled = True
-        Me.cboCityOrderBy.Location = New System.Drawing.Point(520, 173)
+        Me.cboCityOrderBy.Location = New System.Drawing.Point(545, 173)
         Me.cboCityOrderBy.Name = "cboCityOrderBy"
-        Me.cboCityOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboCityOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboCityOrderBy.TabIndex = 105
         '
         'cboCityBool
         '
         Me.cboCityBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCityBool.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCityBool.FormattingEnabled = True
-        Me.cboCityBool.Location = New System.Drawing.Point(438, 174)
+        Me.cboCityBool.Location = New System.Drawing.Point(480, 173)
         Me.cboCityBool.Name = "cboCityBool"
-        Me.cboCityBool.Size = New System.Drawing.Size(76, 21)
+        Me.cboCityBool.Size = New System.Drawing.Size(59, 24)
         Me.cboCityBool.TabIndex = 104
         '
         'cboCitySearch
         '
         Me.cboCitySearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCitySearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCitySearch.FormattingEnabled = True
-        Me.cboCitySearch.Location = New System.Drawing.Point(311, 173)
+        Me.cboCitySearch.Location = New System.Drawing.Point(353, 173)
         Me.cboCitySearch.Name = "cboCitySearch"
-        Me.cboCitySearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboCitySearch.Size = New System.Drawing.Size(121, 24)
         Me.cboCitySearch.TabIndex = 103
         '
         'cboAddressOrderBy
         '
         Me.cboAddressOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboAddressOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboAddressOrderBy.FormattingEnabled = True
-        Me.cboAddressOrderBy.Location = New System.Drawing.Point(520, 141)
+        Me.cboAddressOrderBy.Location = New System.Drawing.Point(545, 141)
         Me.cboAddressOrderBy.Name = "cboAddressOrderBy"
-        Me.cboAddressOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboAddressOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboAddressOrderBy.TabIndex = 102
         '
         'cboAddressBool
         '
         Me.cboAddressBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboAddressBool.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboAddressBool.FormattingEnabled = True
-        Me.cboAddressBool.Location = New System.Drawing.Point(438, 141)
+        Me.cboAddressBool.Location = New System.Drawing.Point(480, 140)
         Me.cboAddressBool.Name = "cboAddressBool"
-        Me.cboAddressBool.Size = New System.Drawing.Size(76, 21)
+        Me.cboAddressBool.Size = New System.Drawing.Size(59, 24)
         Me.cboAddressBool.TabIndex = 101
         '
         'cboAddressSearch
         '
         Me.cboAddressSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboAddressSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboAddressSearch.FormattingEnabled = True
-        Me.cboAddressSearch.Location = New System.Drawing.Point(311, 141)
+        Me.cboAddressSearch.Location = New System.Drawing.Point(353, 141)
         Me.cboAddressSearch.Name = "cboAddressSearch"
-        Me.cboAddressSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboAddressSearch.Size = New System.Drawing.Size(121, 24)
         Me.cboAddressSearch.TabIndex = 100
         '
         'cboNameOrderBy
         '
         Me.cboNameOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboNameOrderBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboNameOrderBy.FormattingEnabled = True
-        Me.cboNameOrderBy.Location = New System.Drawing.Point(520, 46)
+        Me.cboNameOrderBy.Location = New System.Drawing.Point(545, 59)
         Me.cboNameOrderBy.Name = "cboNameOrderBy"
-        Me.cboNameOrderBy.Size = New System.Drawing.Size(81, 21)
+        Me.cboNameOrderBy.Size = New System.Drawing.Size(62, 24)
         Me.cboNameOrderBy.TabIndex = 99
         '
         'cboNameSearch
         '
         Me.cboNameSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboNameSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboNameSearch.FormattingEnabled = True
-        Me.cboNameSearch.Location = New System.Drawing.Point(311, 46)
+        Me.cboNameSearch.Location = New System.Drawing.Point(353, 59)
         Me.cboNameSearch.Name = "cboNameSearch"
-        Me.cboNameSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cboNameSearch.Size = New System.Drawing.Size(121, 24)
         Me.cboNameSearch.TabIndex = 98
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(163, 370)
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(188, 387)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(142, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(142, 22)
         Me.txtEmail.TabIndex = 97
         '
         'txtPhone
         '
-        Me.txtPhone.Location = New System.Drawing.Point(163, 314)
+        Me.txtPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhone.Location = New System.Drawing.Point(188, 312)
         Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(142, 20)
+        Me.txtPhone.Size = New System.Drawing.Size(142, 22)
         Me.txtPhone.TabIndex = 96
         '
         'txtZip
         '
-        Me.txtZip.Location = New System.Drawing.Point(164, 242)
+        Me.txtZip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtZip.Location = New System.Drawing.Point(189, 242)
         Me.txtZip.Name = "txtZip"
-        Me.txtZip.Size = New System.Drawing.Size(142, 20)
+        Me.txtZip.Size = New System.Drawing.Size(142, 22)
         Me.txtZip.TabIndex = 95
         '
         'txtState
         '
-        Me.txtState.Location = New System.Drawing.Point(163, 207)
+        Me.txtState.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtState.Location = New System.Drawing.Point(188, 207)
         Me.txtState.Name = "txtState"
-        Me.txtState.Size = New System.Drawing.Size(142, 20)
+        Me.txtState.Size = New System.Drawing.Size(142, 22)
         Me.txtState.TabIndex = 94
         '
         'txtCity
         '
-        Me.txtCity.Location = New System.Drawing.Point(163, 174)
+        Me.txtCity.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCity.Location = New System.Drawing.Point(188, 174)
         Me.txtCity.Name = "txtCity"
-        Me.txtCity.Size = New System.Drawing.Size(142, 20)
+        Me.txtCity.Size = New System.Drawing.Size(142, 22)
         Me.txtCity.TabIndex = 93
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(163, 142)
+        Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(188, 142)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(142, 20)
+        Me.txtAddress.Size = New System.Drawing.Size(142, 22)
         Me.txtAddress.TabIndex = 92
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(164, 46)
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(189, 59)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(141, 20)
+        Me.txtName.Size = New System.Drawing.Size(141, 22)
         Me.txtName.TabIndex = 91
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(119, 373)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(134, 389)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(38, 13)
+        Me.Label8.Size = New System.Drawing.Size(48, 16)
         Me.Label8.TabIndex = 90
         Me.Label8.Text = "Email :"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(113, 317)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(129, 313)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 13)
+        Me.Label7.Size = New System.Drawing.Size(53, 16)
         Me.Label7.TabIndex = 89
         Me.Label7.Text = "Phone :"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(129, 245)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(150, 245)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(28, 13)
+        Me.Label6.Size = New System.Drawing.Size(33, 16)
         Me.Label6.TabIndex = 88
         Me.Label6.Text = "Zip :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(120, 210)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(138, 210)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(38, 13)
+        Me.Label5.Size = New System.Drawing.Size(45, 16)
         Me.Label5.TabIndex = 87
         Me.Label5.Text = "State :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(127, 177)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(147, 177)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 13)
+        Me.Label4.Size = New System.Drawing.Size(36, 16)
         Me.Label4.TabIndex = 86
         Me.Label4.Text = "City :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(108, 145)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(118, 145)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 13)
+        Me.Label3.Size = New System.Drawing.Size(65, 16)
         Me.Label3.TabIndex = 85
         Me.Label3.Text = "Address :"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(51, 46)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(72, 62)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 13)
+        Me.Label1.Size = New System.Drawing.Size(111, 16)
         Me.Label1.TabIndex = 84
         Me.Label1.Text = "Customer Name :"
         '
@@ -512,10 +550,10 @@ Partial Class frmCustomer
         Me.tabCurrent.Controls.Add(Me.dgvCustomerPhone)
         Me.tabCurrent.Controls.Add(Me.dgvCustomerAddress)
         Me.tabCurrent.Controls.Add(Me.dgvCustomer)
-        Me.tabCurrent.Location = New System.Drawing.Point(4, 22)
+        Me.tabCurrent.Location = New System.Drawing.Point(4, 28)
         Me.tabCurrent.Name = "tabCurrent"
         Me.tabCurrent.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabCurrent.Size = New System.Drawing.Size(823, 468)
+        Me.tabCurrent.Size = New System.Drawing.Size(921, 537)
         Me.tabCurrent.TabIndex = 1
         Me.tabCurrent.Text = "Current"
         '
@@ -733,41 +771,19 @@ Partial Class frmCustomer
         Me.CustomerName.HeaderText = "Name"
         Me.CustomerName.Name = "CustomerName"
         '
-        'tabAdd
+        'tabHistory
         '
-        Me.tabAdd.BackColor = System.Drawing.Color.Gainsboro
-        Me.tabAdd.Controls.Add(Me.dgvWorkorderComment)
-        Me.tabAdd.Controls.Add(Me.dgvWorkorderLabor)
-        Me.tabAdd.Controls.Add(Me.dgvWorkorderPart)
-        Me.tabAdd.Controls.Add(Me.dgvWorkorder)
-        Me.tabAdd.Location = New System.Drawing.Point(4, 22)
-        Me.tabAdd.Name = "tabAdd"
-        Me.tabAdd.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabAdd.Size = New System.Drawing.Size(921, 543)
-        Me.tabAdd.TabIndex = 2
-        Me.tabAdd.Text = "Service History"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(965, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
-        '
-        'mnuSave
-        '
-        Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(152, 22)
-        Me.mnuSave.Text = "Save"
+        Me.tabHistory.BackColor = System.Drawing.Color.Gainsboro
+        Me.tabHistory.Controls.Add(Me.dgvWorkorderComment)
+        Me.tabHistory.Controls.Add(Me.dgvWorkorderLabor)
+        Me.tabHistory.Controls.Add(Me.dgvWorkorderPart)
+        Me.tabHistory.Controls.Add(Me.dgvWorkorder)
+        Me.tabHistory.Location = New System.Drawing.Point(4, 28)
+        Me.tabHistory.Name = "tabHistory"
+        Me.tabHistory.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabHistory.Size = New System.Drawing.Size(921, 537)
+        Me.tabHistory.TabIndex = 2
+        Me.tabHistory.Text = "Service History"
         '
         'dgvWorkorderComment
         '
@@ -1045,6 +1061,28 @@ Partial Class frmCustomer
         Me.TotalCost.Name = "TotalCost"
         Me.TotalCost.Width = 75
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(965, 24)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'mnuSave
+        '
+        Me.mnuSave.Name = "mnuSave"
+        Me.mnuSave.Size = New System.Drawing.Size(98, 22)
+        Me.mnuSave.Text = "Save"
+        '
         'frmCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1053,6 +1091,7 @@ Partial Class frmCustomer
         Me.ClientSize = New System.Drawing.Size(965, 636)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmCustomer"
         Me.Text = "Customer Account"
@@ -1064,13 +1103,13 @@ Partial Class frmCustomer
         CType(Me.dgvCustomerPhone, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvCustomerAddress, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvCustomer, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tabAdd.ResumeLayout(False)
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.tabHistory.ResumeLayout(False)
         CType(Me.dgvWorkorderComment, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvWorkorderLabor, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvWorkorderPart, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvWorkorder, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1143,7 +1182,7 @@ Partial Class frmCustomer
     Friend WithEvents LastUpdated As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Deleted As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents CustomerName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents tabAdd As System.Windows.Forms.TabPage
+    Friend WithEvents tabHistory As System.Windows.Forms.TabPage
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuSave As System.Windows.Forms.ToolStripMenuItem

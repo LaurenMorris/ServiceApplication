@@ -22,6 +22,7 @@ Partial Class frmWorkorderEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWorkorderEdit))
         Me.lblDateClosed = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.cboCustomer = New System.Windows.Forms.ComboBox()
@@ -487,6 +488,7 @@ Partial Class frmWorkorderEdit
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblDateClosed)
         Me.Controls.Add(Me.Label5)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmWorkorderEdit"
         Me.Text = "Edit Workorder"
         CType(Me.dgvWorkorderComment, System.ComponentModel.ISupportInitialize).EndInit()

@@ -22,6 +22,7 @@ Partial Class frmManufacturer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmManufacturer))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.dgvManufacturerEmail = New System.Windows.Forms.DataGridView()
@@ -137,11 +138,12 @@ Partial Class frmManufacturer
         '
         'TabControl1
         '
+        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Location = New System.Drawing.Point(69, 62)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1015, 661)
@@ -154,11 +156,11 @@ Partial Class frmManufacturer
         Me.TabPage1.Controls.Add(Me.dgvManufacturerPhone)
         Me.TabPage1.Controls.Add(Me.dgvManufacturerAddress)
         Me.TabPage1.Controls.Add(Me.dgvManufacturer)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage1.Size = New System.Drawing.Size(1007, 632)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage1.Size = New System.Drawing.Size(1007, 629)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "View / Edit Current"
         '
@@ -167,7 +169,7 @@ Partial Class frmManufacturer
         Me.dgvManufacturerEmail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturerEmail.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ManufacturerEmailID, Me.ManufacturerEmailVersion, Me.ManufacturerEmailLastUpdated, Me.ManufacturerEmailDeleted, Me.EmailType, Me.Email})
         Me.dgvManufacturerEmail.Location = New System.Drawing.Point(221, 478)
-        Me.dgvManufacturerEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvManufacturerEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturerEmail.Name = "dgvManufacturerEmail"
         Me.dgvManufacturerEmail.Size = New System.Drawing.Size(561, 142)
         Me.dgvManufacturerEmail.TabIndex = 3
@@ -219,7 +221,7 @@ Partial Class frmManufacturer
         Me.dgvManufacturerPhone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturerPhone.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ManufacturerPhoneID, Me.ManufacturerPhoneVersion, Me.ManufacturerPhoneLastUpdated, Me.ManufacturerPhoneDeleted, Me.PhoneType, Me.Phone})
         Me.dgvManufacturerPhone.Location = New System.Drawing.Point(221, 329)
-        Me.dgvManufacturerPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvManufacturerPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturerPhone.Name = "dgvManufacturerPhone"
         Me.dgvManufacturerPhone.Size = New System.Drawing.Size(561, 142)
         Me.dgvManufacturerPhone.TabIndex = 2
@@ -269,7 +271,7 @@ Partial Class frmManufacturer
         Me.dgvManufacturerAddress.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturerAddress.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ManufacturerAddressID, Me.ManufacturerAddressVersion, Me.ManufacturerAddressLastUpdated, Me.ManufacturerAddressDeleted, Me.AddressType, Me.Address, Me.City, Me.State, Me.Zip})
         Me.dgvManufacturerAddress.Location = New System.Drawing.Point(124, 180)
-        Me.dgvManufacturerAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvManufacturerAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturerAddress.Name = "dgvManufacturerAddress"
         Me.dgvManufacturerAddress.Size = New System.Drawing.Size(769, 142)
         Me.dgvManufacturerAddress.TabIndex = 1
@@ -337,7 +339,7 @@ Partial Class frmManufacturer
         Me.dgvManufacturer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturer.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Version, Me.LastUpdated, Me.Deleted, Me.ManufacturerName, Me.Contact})
         Me.dgvManufacturer.Location = New System.Drawing.Point(221, 31)
-        Me.dgvManufacturer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvManufacturer.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturer.Name = "dgvManufacturer"
         Me.dgvManufacturer.Size = New System.Drawing.Size(561, 142)
         Me.dgvManufacturer.TabIndex = 0
@@ -425,50 +427,50 @@ Partial Class frmManufacturer
         Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage2.Size = New System.Drawing.Size(1007, 632)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage2.Size = New System.Drawing.Size(1007, 629)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Search"
         '
         'btnSearchEmail
         '
-        Me.btnSearchEmail.Location = New System.Drawing.Point(807, 459)
-        Me.btnSearchEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSearchEmail.Location = New System.Drawing.Point(745, 459)
+        Me.btnSearchEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSearchEmail.Name = "btnSearchEmail"
-        Me.btnSearchEmail.Size = New System.Drawing.Size(129, 32)
+        Me.btnSearchEmail.Size = New System.Drawing.Size(114, 32)
         Me.btnSearchEmail.TabIndex = 43
         Me.btnSearchEmail.Text = "Search Email"
         Me.btnSearchEmail.UseVisualStyleBackColor = True
         '
         'btnSearchPhone
         '
-        Me.btnSearchPhone.Location = New System.Drawing.Point(807, 390)
-        Me.btnSearchPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSearchPhone.Location = New System.Drawing.Point(745, 390)
+        Me.btnSearchPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSearchPhone.Name = "btnSearchPhone"
-        Me.btnSearchPhone.Size = New System.Drawing.Size(129, 33)
+        Me.btnSearchPhone.Size = New System.Drawing.Size(114, 33)
         Me.btnSearchPhone.TabIndex = 42
         Me.btnSearchPhone.Text = "Search Phone"
         Me.btnSearchPhone.UseVisualStyleBackColor = True
         '
         'btnSearchAddress
         '
-        Me.btnSearchAddress.Location = New System.Drawing.Point(807, 226)
-        Me.btnSearchAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSearchAddress.Location = New System.Drawing.Point(745, 226)
+        Me.btnSearchAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSearchAddress.Name = "btnSearchAddress"
-        Me.btnSearchAddress.Size = New System.Drawing.Size(129, 42)
+        Me.btnSearchAddress.Size = New System.Drawing.Size(114, 42)
         Me.btnSearchAddress.TabIndex = 41
         Me.btnSearchAddress.Text = "Search Address"
         Me.btnSearchAddress.UseVisualStyleBackColor = True
         '
         'btnSearchManufacturer
         '
-        Me.btnSearchManufacturer.Location = New System.Drawing.Point(807, 78)
-        Me.btnSearchManufacturer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSearchManufacturer.Location = New System.Drawing.Point(745, 77)
+        Me.btnSearchManufacturer.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSearchManufacturer.Name = "btnSearchManufacturer"
-        Me.btnSearchManufacturer.Size = New System.Drawing.Size(129, 46)
+        Me.btnSearchManufacturer.Size = New System.Drawing.Size(114, 46)
         Me.btnSearchManufacturer.TabIndex = 40
         Me.btnSearchManufacturer.Text = "Search Manufacturer"
         Me.btnSearchManufacturer.UseVisualStyleBackColor = True
@@ -477,206 +479,206 @@ Partial Class frmManufacturer
         '
         Me.cboEmailOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboEmailOrderBy.FormattingEnabled = True
-        Me.cboEmailOrderBy.Location = New System.Drawing.Point(665, 463)
-        Me.cboEmailOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboEmailOrderBy.Location = New System.Drawing.Point(649, 464)
+        Me.cboEmailOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboEmailOrderBy.Name = "cboEmailOrderBy"
-        Me.cboEmailOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboEmailOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboEmailOrderBy.TabIndex = 39
         '
         'cboEmailSearch
         '
         Me.cboEmailSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboEmailSearch.FormattingEnabled = True
-        Me.cboEmailSearch.Location = New System.Drawing.Point(387, 464)
-        Me.cboEmailSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboEmailSearch.Location = New System.Drawing.Point(406, 464)
+        Me.cboEmailSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboEmailSearch.Name = "cboEmailSearch"
-        Me.cboEmailSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboEmailSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboEmailSearch.TabIndex = 37
         '
         'cboPhoneOrderBy
         '
         Me.cboPhoneOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboPhoneOrderBy.FormattingEnabled = True
-        Me.cboPhoneOrderBy.Location = New System.Drawing.Point(665, 395)
-        Me.cboPhoneOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboPhoneOrderBy.Location = New System.Drawing.Point(649, 396)
+        Me.cboPhoneOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboPhoneOrderBy.Name = "cboPhoneOrderBy"
-        Me.cboPhoneOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboPhoneOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboPhoneOrderBy.TabIndex = 36
         '
         'cboPhoneSearch
         '
         Me.cboPhoneSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboPhoneSearch.FormattingEnabled = True
-        Me.cboPhoneSearch.Location = New System.Drawing.Point(387, 395)
-        Me.cboPhoneSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboPhoneSearch.Location = New System.Drawing.Point(406, 395)
+        Me.cboPhoneSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboPhoneSearch.Name = "cboPhoneSearch"
-        Me.cboPhoneSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboPhoneSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboPhoneSearch.TabIndex = 34
         '
         'cboZipOrderBy
         '
         Me.cboZipOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboZipOrderBy.FormattingEnabled = True
-        Me.cboZipOrderBy.Location = New System.Drawing.Point(665, 306)
-        Me.cboZipOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboZipOrderBy.Location = New System.Drawing.Point(649, 307)
+        Me.cboZipOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboZipOrderBy.Name = "cboZipOrderBy"
-        Me.cboZipOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboZipOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboZipOrderBy.TabIndex = 33
         '
         'cboZipSearch
         '
         Me.cboZipSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboZipSearch.FormattingEnabled = True
-        Me.cboZipSearch.Location = New System.Drawing.Point(387, 305)
-        Me.cboZipSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboZipSearch.Location = New System.Drawing.Point(406, 305)
+        Me.cboZipSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboZipSearch.Name = "cboZipSearch"
-        Me.cboZipSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboZipSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboZipSearch.TabIndex = 31
         '
         'cboStateOrderBy
         '
         Me.cboStateOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboStateOrderBy.FormattingEnabled = True
-        Me.cboStateOrderBy.Location = New System.Drawing.Point(665, 262)
-        Me.cboStateOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboStateOrderBy.Location = New System.Drawing.Point(649, 263)
+        Me.cboStateOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboStateOrderBy.Name = "cboStateOrderBy"
-        Me.cboStateOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboStateOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboStateOrderBy.TabIndex = 30
         '
         'cboStateBool
         '
         Me.cboStateBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboStateBool.FormattingEnabled = True
-        Me.cboStateBool.Location = New System.Drawing.Point(556, 262)
-        Me.cboStateBool.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboStateBool.Location = New System.Drawing.Point(552, 263)
+        Me.cboStateBool.Margin = New System.Windows.Forms.Padding(4)
         Me.cboStateBool.Name = "cboStateBool"
-        Me.cboStateBool.Size = New System.Drawing.Size(100, 24)
+        Me.cboStateBool.Size = New System.Drawing.Size(73, 24)
         Me.cboStateBool.TabIndex = 29
         '
         'cboStateSearch
         '
         Me.cboStateSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboStateSearch.FormattingEnabled = True
-        Me.cboStateSearch.Location = New System.Drawing.Point(387, 262)
-        Me.cboStateSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboStateSearch.Location = New System.Drawing.Point(406, 263)
+        Me.cboStateSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboStateSearch.Name = "cboStateSearch"
-        Me.cboStateSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboStateSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboStateSearch.TabIndex = 28
         '
         'cboCityOrderBy
         '
         Me.cboCityOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboCityOrderBy.FormattingEnabled = True
-        Me.cboCityOrderBy.Location = New System.Drawing.Point(665, 222)
-        Me.cboCityOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboCityOrderBy.Location = New System.Drawing.Point(649, 223)
+        Me.cboCityOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboCityOrderBy.Name = "cboCityOrderBy"
-        Me.cboCityOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboCityOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboCityOrderBy.TabIndex = 27
         '
         'cboCityBool
         '
         Me.cboCityBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboCityBool.FormattingEnabled = True
-        Me.cboCityBool.Location = New System.Drawing.Point(556, 223)
-        Me.cboCityBool.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboCityBool.Location = New System.Drawing.Point(552, 223)
+        Me.cboCityBool.Margin = New System.Windows.Forms.Padding(4)
         Me.cboCityBool.Name = "cboCityBool"
-        Me.cboCityBool.Size = New System.Drawing.Size(100, 24)
+        Me.cboCityBool.Size = New System.Drawing.Size(73, 24)
         Me.cboCityBool.TabIndex = 26
         '
         'cboCitySearch
         '
         Me.cboCitySearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboCitySearch.FormattingEnabled = True
-        Me.cboCitySearch.Location = New System.Drawing.Point(387, 222)
-        Me.cboCitySearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboCitySearch.Location = New System.Drawing.Point(406, 222)
+        Me.cboCitySearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboCitySearch.Name = "cboCitySearch"
-        Me.cboCitySearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboCitySearch.Size = New System.Drawing.Size(125, 24)
         Me.cboCitySearch.TabIndex = 25
         '
         'cboAddressOrderBy
         '
         Me.cboAddressOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboAddressOrderBy.FormattingEnabled = True
-        Me.cboAddressOrderBy.Location = New System.Drawing.Point(665, 182)
-        Me.cboAddressOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboAddressOrderBy.Location = New System.Drawing.Point(649, 183)
+        Me.cboAddressOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboAddressOrderBy.Name = "cboAddressOrderBy"
-        Me.cboAddressOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboAddressOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboAddressOrderBy.TabIndex = 24
         '
         'cboAddressBool
         '
         Me.cboAddressBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboAddressBool.FormattingEnabled = True
-        Me.cboAddressBool.Location = New System.Drawing.Point(556, 182)
-        Me.cboAddressBool.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboAddressBool.Location = New System.Drawing.Point(552, 183)
+        Me.cboAddressBool.Margin = New System.Windows.Forms.Padding(4)
         Me.cboAddressBool.Name = "cboAddressBool"
-        Me.cboAddressBool.Size = New System.Drawing.Size(100, 24)
+        Me.cboAddressBool.Size = New System.Drawing.Size(73, 24)
         Me.cboAddressBool.TabIndex = 23
         '
         'cboAddressSearch
         '
         Me.cboAddressSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboAddressSearch.FormattingEnabled = True
-        Me.cboAddressSearch.Location = New System.Drawing.Point(387, 182)
-        Me.cboAddressSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboAddressSearch.Location = New System.Drawing.Point(406, 184)
+        Me.cboAddressSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboAddressSearch.Name = "cboAddressSearch"
-        Me.cboAddressSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboAddressSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboAddressSearch.TabIndex = 22
         '
         'cboContactOrderBy
         '
         Me.cboContactOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboContactOrderBy.FormattingEnabled = True
-        Me.cboContactOrderBy.Location = New System.Drawing.Point(665, 102)
-        Me.cboContactOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboContactOrderBy.Location = New System.Drawing.Point(649, 104)
+        Me.cboContactOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboContactOrderBy.Name = "cboContactOrderBy"
-        Me.cboContactOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboContactOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboContactOrderBy.TabIndex = 21
         '
         'cboContactSearch
         '
         Me.cboContactSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboContactSearch.FormattingEnabled = True
-        Me.cboContactSearch.Location = New System.Drawing.Point(387, 102)
-        Me.cboContactSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboContactSearch.Location = New System.Drawing.Point(406, 102)
+        Me.cboContactSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboContactSearch.Name = "cboContactSearch"
-        Me.cboContactSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboContactSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboContactSearch.TabIndex = 19
         '
         'cboNameOrderBy
         '
         Me.cboNameOrderBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboNameOrderBy.FormattingEnabled = True
-        Me.cboNameOrderBy.Location = New System.Drawing.Point(665, 65)
-        Me.cboNameOrderBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboNameOrderBy.Location = New System.Drawing.Point(649, 66)
+        Me.cboNameOrderBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cboNameOrderBy.Name = "cboNameOrderBy"
-        Me.cboNameOrderBy.Size = New System.Drawing.Size(107, 24)
+        Me.cboNameOrderBy.Size = New System.Drawing.Size(77, 24)
         Me.cboNameOrderBy.TabIndex = 18
         '
         'cboNameBool
         '
         Me.cboNameBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboNameBool.FormattingEnabled = True
-        Me.cboNameBool.Location = New System.Drawing.Point(556, 65)
-        Me.cboNameBool.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboNameBool.Location = New System.Drawing.Point(548, 65)
+        Me.cboNameBool.Margin = New System.Windows.Forms.Padding(4)
         Me.cboNameBool.Name = "cboNameBool"
-        Me.cboNameBool.Size = New System.Drawing.Size(100, 24)
+        Me.cboNameBool.Size = New System.Drawing.Size(77, 24)
         Me.cboNameBool.TabIndex = 17
         '
         'cboNameSearch
         '
         Me.cboNameSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboNameSearch.FormattingEnabled = True
-        Me.cboNameSearch.Location = New System.Drawing.Point(387, 65)
-        Me.cboNameSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboNameSearch.Location = New System.Drawing.Point(406, 65)
+        Me.cboNameSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cboNameSearch.Name = "cboNameSearch"
-        Me.cboNameSearch.Size = New System.Drawing.Size(160, 24)
+        Me.cboNameSearch.Size = New System.Drawing.Size(125, 24)
         Me.cboNameSearch.TabIndex = 16
         '
         'txtEmail
         '
         Me.txtEmail.Location = New System.Drawing.Point(189, 464)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(188, 22)
         Me.txtEmail.TabIndex = 15
@@ -684,7 +686,7 @@ Partial Class frmManufacturer
         'txtPhone
         '
         Me.txtPhone.Location = New System.Drawing.Point(189, 395)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(188, 22)
         Me.txtPhone.TabIndex = 14
@@ -692,7 +694,7 @@ Partial Class frmManufacturer
         'txtZip
         '
         Me.txtZip.Location = New System.Drawing.Point(191, 306)
-        Me.txtZip.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtZip.Margin = New System.Windows.Forms.Padding(4)
         Me.txtZip.Name = "txtZip"
         Me.txtZip.Size = New System.Drawing.Size(188, 22)
         Me.txtZip.TabIndex = 13
@@ -700,7 +702,7 @@ Partial Class frmManufacturer
         'txtState
         '
         Me.txtState.Location = New System.Drawing.Point(189, 263)
-        Me.txtState.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtState.Margin = New System.Windows.Forms.Padding(4)
         Me.txtState.Name = "txtState"
         Me.txtState.Size = New System.Drawing.Size(188, 22)
         Me.txtState.TabIndex = 12
@@ -708,7 +710,7 @@ Partial Class frmManufacturer
         'txtCity
         '
         Me.txtCity.Location = New System.Drawing.Point(189, 223)
-        Me.txtCity.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCity.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCity.Name = "txtCity"
         Me.txtCity.Size = New System.Drawing.Size(188, 22)
         Me.txtCity.TabIndex = 11
@@ -716,7 +718,7 @@ Partial Class frmManufacturer
         'txtAddress
         '
         Me.txtAddress.Location = New System.Drawing.Point(189, 183)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(188, 22)
         Me.txtAddress.TabIndex = 10
@@ -724,7 +726,7 @@ Partial Class frmManufacturer
         'txtContact
         '
         Me.txtContact.Location = New System.Drawing.Point(191, 103)
-        Me.txtContact.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtContact.Margin = New System.Windows.Forms.Padding(4)
         Me.txtContact.Name = "txtContact"
         Me.txtContact.Size = New System.Drawing.Size(187, 22)
         Me.txtContact.TabIndex = 9
@@ -732,7 +734,7 @@ Partial Class frmManufacturer
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(191, 65)
-        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(187, 22)
         Me.txtName.TabIndex = 8
@@ -844,11 +846,11 @@ Partial Class frmManufacturer
         Me.TabPage3.Controls.Add(Me.Label11)
         Me.TabPage3.Controls.Add(Me.lblManufacturerID)
         Me.TabPage3.Controls.Add(Me.lblManufacturer)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage3.Size = New System.Drawing.Size(1007, 632)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage3.Size = New System.Drawing.Size(1007, 629)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Add New"
         '
@@ -867,7 +869,7 @@ Partial Class frmManufacturer
         '
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.Location = New System.Drawing.Point(793, 453)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(125, 57)
         Me.btnAdd.TabIndex = 22
@@ -878,7 +880,7 @@ Partial Class frmManufacturer
         '
         Me.txtPhoneAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPhoneAdd.Location = New System.Drawing.Point(213, 482)
-        Me.txtPhoneAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPhoneAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPhoneAdd.Name = "txtPhoneAdd"
         Me.txtPhoneAdd.Size = New System.Drawing.Size(264, 22)
         Me.txtPhoneAdd.TabIndex = 21
@@ -887,7 +889,7 @@ Partial Class frmManufacturer
         '
         Me.txtEmailAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmailAdd.Location = New System.Drawing.Point(213, 420)
-        Me.txtEmailAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmailAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmailAdd.Name = "txtEmailAdd"
         Me.txtEmailAdd.Size = New System.Drawing.Size(264, 22)
         Me.txtEmailAdd.TabIndex = 20
@@ -896,7 +898,7 @@ Partial Class frmManufacturer
         '
         Me.txtZipAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtZipAdd.Location = New System.Drawing.Point(213, 325)
-        Me.txtZipAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtZipAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtZipAdd.Name = "txtZipAdd"
         Me.txtZipAdd.Size = New System.Drawing.Size(144, 22)
         Me.txtZipAdd.TabIndex = 19
@@ -905,7 +907,7 @@ Partial Class frmManufacturer
         '
         Me.txtStateAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtStateAdd.Location = New System.Drawing.Point(213, 286)
-        Me.txtStateAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtStateAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtStateAdd.Name = "txtStateAdd"
         Me.txtStateAdd.Size = New System.Drawing.Size(144, 22)
         Me.txtStateAdd.TabIndex = 18
@@ -914,7 +916,7 @@ Partial Class frmManufacturer
         '
         Me.txtCityAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCityAdd.Location = New System.Drawing.Point(213, 246)
-        Me.txtCityAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCityAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCityAdd.Name = "txtCityAdd"
         Me.txtCityAdd.Size = New System.Drawing.Size(283, 22)
         Me.txtCityAdd.TabIndex = 17
@@ -923,7 +925,7 @@ Partial Class frmManufacturer
         '
         Me.txtAddressAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAddressAdd.Location = New System.Drawing.Point(213, 206)
-        Me.txtAddressAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAddressAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAddressAdd.Name = "txtAddressAdd"
         Me.txtAddressAdd.Size = New System.Drawing.Size(283, 22)
         Me.txtAddressAdd.TabIndex = 16
@@ -932,7 +934,7 @@ Partial Class frmManufacturer
         '
         Me.txtContactAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContactAdd.Location = New System.Drawing.Point(615, 108)
-        Me.txtContactAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtContactAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtContactAdd.Name = "txtContactAdd"
         Me.txtContactAdd.Size = New System.Drawing.Size(264, 22)
         Me.txtContactAdd.TabIndex = 15
@@ -941,7 +943,7 @@ Partial Class frmManufacturer
         '
         Me.txtNameAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNameAdd.Location = New System.Drawing.Point(212, 108)
-        Me.txtNameAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNameAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNameAdd.Name = "txtNameAdd"
         Me.txtNameAdd.Size = New System.Drawing.Size(284, 22)
         Me.txtNameAdd.TabIndex = 14
@@ -962,7 +964,7 @@ Partial Class frmManufacturer
         Me.cboPhoneType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboPhoneType.FormattingEnabled = True
         Me.cboPhoneType.Location = New System.Drawing.Point(508, 480)
-        Me.cboPhoneType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboPhoneType.Margin = New System.Windows.Forms.Padding(4)
         Me.cboPhoneType.Name = "cboPhoneType"
         Me.cboPhoneType.Size = New System.Drawing.Size(187, 24)
         Me.cboPhoneType.TabIndex = 12
@@ -983,7 +985,7 @@ Partial Class frmManufacturer
         Me.cboEmailType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboEmailType.FormattingEnabled = True
         Me.cboEmailType.Location = New System.Drawing.Point(508, 420)
-        Me.cboEmailType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboEmailType.Margin = New System.Windows.Forms.Padding(4)
         Me.cboEmailType.Name = "cboEmailType"
         Me.cboEmailType.Size = New System.Drawing.Size(187, 24)
         Me.cboEmailType.TabIndex = 10
@@ -1025,7 +1027,7 @@ Partial Class frmManufacturer
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(141, 246)
+        Me.Label14.Location = New System.Drawing.Point(132, 246)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 16)
@@ -1037,7 +1039,7 @@ Partial Class frmManufacturer
         Me.cboAddressType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboAddressType.FormattingEnabled = True
         Me.cboAddressType.Location = New System.Drawing.Point(508, 325)
-        Me.cboAddressType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboAddressType.Margin = New System.Windows.Forms.Padding(4)
         Me.cboAddressType.Name = "cboAddressType"
         Me.cboAddressType.Size = New System.Drawing.Size(187, 24)
         Me.cboAddressType.TabIndex = 5
@@ -1068,7 +1070,7 @@ Partial Class frmManufacturer
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(15, 112)
+        Me.Label11.Location = New System.Drawing.Point(33, 112)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(134, 16)
@@ -1118,7 +1120,7 @@ Partial Class frmManufacturer
         '
         Me.mnuSave.Enabled = False
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(152, 22)
+        Me.mnuSave.Size = New System.Drawing.Size(98, 22)
         Me.mnuSave.Text = "Save"
         '
         'frmManufacturer
@@ -1130,8 +1132,9 @@ Partial Class frmManufacturer
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmManufacturer"
         Me.Text = "Manufacturer Info"
         Me.TabControl1.ResumeLayout(False)
