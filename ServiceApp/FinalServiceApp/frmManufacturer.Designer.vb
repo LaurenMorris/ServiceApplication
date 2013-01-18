@@ -166,12 +166,13 @@ Partial Class frmManufacturer
         '
         'dgvManufacturerEmail
         '
+        Me.dgvManufacturerEmail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvManufacturerEmail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturerEmail.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ManufacturerEmailID, Me.ManufacturerEmailVersion, Me.ManufacturerEmailLastUpdated, Me.ManufacturerEmailDeleted, Me.EmailType, Me.Email})
-        Me.dgvManufacturerEmail.Location = New System.Drawing.Point(221, 478)
+        Me.dgvManufacturerEmail.Location = New System.Drawing.Point(632, 30)
         Me.dgvManufacturerEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturerEmail.Name = "dgvManufacturerEmail"
-        Me.dgvManufacturerEmail.Size = New System.Drawing.Size(561, 142)
+        Me.dgvManufacturerEmail.Size = New System.Drawing.Size(261, 142)
         Me.dgvManufacturerEmail.TabIndex = 3
         '
         'ManufacturerEmailID
@@ -218,12 +219,13 @@ Partial Class frmManufacturer
         '
         'dgvManufacturerPhone
         '
+        Me.dgvManufacturerPhone.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvManufacturerPhone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturerPhone.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ManufacturerPhoneID, Me.ManufacturerPhoneVersion, Me.ManufacturerPhoneLastUpdated, Me.ManufacturerPhoneDeleted, Me.PhoneType, Me.Phone})
-        Me.dgvManufacturerPhone.Location = New System.Drawing.Point(221, 329)
+        Me.dgvManufacturerPhone.Location = New System.Drawing.Point(355, 30)
         Me.dgvManufacturerPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturerPhone.Name = "dgvManufacturerPhone"
-        Me.dgvManufacturerPhone.Size = New System.Drawing.Size(561, 142)
+        Me.dgvManufacturerPhone.Size = New System.Drawing.Size(261, 142)
         Me.dgvManufacturerPhone.TabIndex = 2
         '
         'ManufacturerPhoneID
@@ -268,12 +270,15 @@ Partial Class frmManufacturer
         '
         'dgvManufacturerAddress
         '
+        Me.dgvManufacturerAddress.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvManufacturerAddress.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturerAddress.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ManufacturerAddressID, Me.ManufacturerAddressVersion, Me.ManufacturerAddressLastUpdated, Me.ManufacturerAddressDeleted, Me.AddressType, Me.Address, Me.City, Me.State, Me.Zip})
-        Me.dgvManufacturerAddress.Location = New System.Drawing.Point(124, 180)
+        Me.dgvManufacturerAddress.Location = New System.Drawing.Point(76, 253)
         Me.dgvManufacturerAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturerAddress.Name = "dgvManufacturerAddress"
-        Me.dgvManufacturerAddress.Size = New System.Drawing.Size(769, 142)
+        Me.dgvManufacturerAddress.Size = New System.Drawing.Size(817, 142)
         Me.dgvManufacturerAddress.TabIndex = 1
         '
         'ManufacturerAddressID
@@ -309,39 +314,45 @@ Partial Class frmManufacturer
         Me.AddressType.DataPropertyName = "AddressTypeID"
         Me.AddressType.HeaderText = "Address Type"
         Me.AddressType.Name = "AddressType"
+        Me.AddressType.Width = 155
         '
         'Address
         '
         Me.Address.DataPropertyName = "Address"
         Me.Address.HeaderText = "Address"
         Me.Address.Name = "Address"
+        Me.Address.Width = 155
         '
         'City
         '
         Me.City.DataPropertyName = "City"
         Me.City.HeaderText = "City"
         Me.City.Name = "City"
+        Me.City.Width = 154
         '
         'State
         '
         Me.State.DataPropertyName = "State"
         Me.State.HeaderText = "State"
         Me.State.Name = "State"
+        Me.State.Width = 155
         '
         'Zip
         '
         Me.Zip.DataPropertyName = "Zip"
         Me.Zip.HeaderText = "Zip"
         Me.Zip.Name = "Zip"
+        Me.Zip.Width = 155
         '
         'dgvManufacturer
         '
+        Me.dgvManufacturer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvManufacturer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvManufacturer.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Version, Me.LastUpdated, Me.Deleted, Me.ManufacturerName, Me.Contact})
-        Me.dgvManufacturer.Location = New System.Drawing.Point(221, 31)
+        Me.dgvManufacturer.Location = New System.Drawing.Point(76, 30)
         Me.dgvManufacturer.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvManufacturer.Name = "dgvManufacturer"
-        Me.dgvManufacturer.Size = New System.Drawing.Size(561, 142)
+        Me.dgvManufacturer.Size = New System.Drawing.Size(261, 142)
         Me.dgvManufacturer.TabIndex = 0
         '
         'ID

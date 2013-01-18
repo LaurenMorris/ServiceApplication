@@ -21,7 +21,9 @@ H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frm
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmEquipment.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmMain.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmManufacturer.resources
+H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmPart.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmTechnician.resources
+H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmWorkorderEdit.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmWorkorderNew.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.Resources.resources
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\GenerateResource.read.1.tlog
@@ -29,5 +31,3 @@ H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\GenerateResource.wr
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.exe
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.xml
 H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.pdb
-H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmWorkorderEdit.resources
-H:\git\ServiceApp\ServiceApp\FinalServiceApp\obj\x86\Release\FinalServiceApp.frmPart.resources
